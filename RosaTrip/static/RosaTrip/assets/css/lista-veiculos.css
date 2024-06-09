@@ -1,0 +1,21 @@
+.navbar-custom {
+  background-color: #11351a !important;
+}
+
+.navbar-custom .navbar-brand,
+.nav-link .nav-link {
+  color: #ffffff !important;
+}
+
+.btn-primary {
+    background-color: #11351a !important;
+    color: #ffffff !important;
+}
+
+.custom-container {
+  margin-top: 100px;
+}
+
+.custom-row {
+  background-color: #e80202 !important;
+}

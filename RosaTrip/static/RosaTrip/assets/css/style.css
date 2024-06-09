@@ -1,0 +1,250 @@
+/*----------------------------------------------------*/
+/* ---- Web Developer: Lucas Dickmann ---- */
+/*----------------------------------------------------*/
+
+
+/* ---- Navbar ---- */
+
+#mainNav .navbar-brand {
+    color: #000000; !important;
+}
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 992px) {
+    #mainNav .navbar-brand {
+        color: #000000; !important;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #000000; !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #mainNav .navbar-nav {
+    }
+    .navbar-toggler {
+        display: block; !important;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+@media (max-width: 420px) {
+    #mainNav .navbar-nav {
+    }
+    .navbar-toggler {
+        display: block; !important;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+/* ---- Header ---- */
+
+.custom-header {
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.custom-header .container {
+    padding-top: 100px;
+}
+
+.header-text {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 30px;
+}
+
+.saiba-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 300px;
+    transition: all .15s ease-in-out;
+
+    background-color: var(--bs-primary);
+    color: var(--bs-emphasis-color);
+}
+
+/* Media Queries (Breakpoints) */
+
+/* Media Queries (Breakpoints) */
+@media (max-width: 1200px) {
+    .header-text {
+        font-size: 2.5em;
+        margin-top: 20px; /* Ajuste a margem conforme necessário */
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-header {
+        height: 90vh;
+    }
+    .custom-header .container {
+        padding-top: 110px; /* Aumentar o padding em telas menores */
+    }
+    .header-text {
+        font-size: 2em;
+        margin-top: 10px; /* Ajuste a margem conforme necessário */
+    }
+    /* ... Outros estilos ... */
+}
+
+@media (max-width: 768px) {
+    .custom-header {
+        height: 80vh;
+    }
+    .custom-header .container {
+        padding-top: 130px;
+    }
+    .header-text {
+        font-size: 1.5em;
+        margin-top: 0;  /* Remover a margem em telas pequenas */
+    }
+    /* ... Outros estilos ... */
+}
+
+@media (max-width: 576px) {
+    .custom-header {
+        height: 70vh;
+    }
+    .custom-header .container {
+        padding-top: 150px;
+    }
+    .header-text {
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+    /* ... Outros estilos ... */
+}
+
+/* Estilos para a seção "About" */
+
+#about {
+    background-color: var(--bs-btn-border-color); /* Define a cor de fundo */
+}
+
+#about .text-white { /* Define a cor do texto */
+    color: white;
+}
+
+#about .text-faded { /* Define a cor do texto */
+    color: #f8f9fa; /* Use uma cor de texto que contraste com o fundo */
+}
+
+#about .mb-4 { /* Define a margem inferior do parágrafo */
+    margin-bottom: 1.5rem; /* Ajuste o valor se necessário */
+}
+
+#about .section-heading { /* Estilos para o título */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+/* ---- Colors ---- */
+
+.bg-primary {
+    background-color: #11351a !important;
+}
+
+.bg-dark{
+    background-color: #11351a !important;
+}
+
+/* ---- Portfolio ---- */
+
+.container-fluid .row.g-0.popup-gallery {
+    margin-top: -20px;
+
+}
+
+.p-0 {
+  padding: 0 !important;
+  background-color: #11351a !important;
+}
+
+#contact .col-lg-8.text-center.mx-auto {
+    color: #000000; !important;
+}
+
+/* ---- Styles for the floating button ---- */
+
+.float {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    bottom: 50px;
+    right: 40px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    font-size: 40px;
+}
+
+/* ---- Styles for the phone number ---- */
+
+.phone-number {
+    position: relative;
+    color: #000000;
+}
+
+/* ---- Styles for the no-inline-styles class ---- */
+
+.no-inline-styles {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* ---- Styles for the map ---- */
+
+.mapa {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+
+/*---- Styles for the service box ----*/
+
+.service-box svg {
+    width: 50px;
+    height: 50px;
+    fill: #11351a;
+    margin-bottom: 20px;
+}
+
+/* ---- Styles for the baseboard ---- */
+
+footer .nav-link a {
+    color: #000000; !important;
+
+}
+
+footer .text-center a {
+    color: blue; !important;
+}
+
+footer img {
+    padding: 20px;
+    background-color: #333;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - RosaTrip Locadora</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/login-page.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
+
+</head>
+
+<body class="cadastro-page">
+
+    <form action="{% url 'cadastro' %}" method="POST">
+        
+        {% csrf_token %}
+        
+        <h1>Cadastro - RosaTrip Locadora</h1>
+        <br>
+        <label>
+            <input type="text" placeholder="Username" name="username">
+        </label>
+        <br>
+        <label>
+            <input type="email" placeholder="Email" name="email">
+        </label>
+        <br>
+        <label>
+            <input type="password" placeholder="Senha" name="senha">
+        </label>
+        <br>
+        <input type="submit" value="Cadastrar">
+        
+    </form>
+
+<main>
+
+    <div class="cadastrar-block">
+
+    </div>
+
+</main>
+
+
+<script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js.map' %}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adicionar Veículo - Rosa Trip Locadora</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Adicionar Veículo Novo</h1>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+    </div>
+
+
+    <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>
