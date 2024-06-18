@@ -31,9 +31,28 @@
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container mt-5">
     <div class="row">
-        <div class="col-md-12">
+            <div class="col-12">
+            <div class="info-box text-center">
+                <h1>ROSA TRIP<br>LOCADORA</h1>
+                <h5>Não tem cadastro?</h5>
+                <form action="{% url 'cadastro' %}" method="GET">
+                    <button class="btn btn-light mt-1" type="submit">Cadastrar</button>
+                </form>
+                <div class="social-media mt-4">
+                    <h6>Acesse nossas redes sociais</h6>
+                    <ul class="social-icons">
+                        <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fab fa-facebook"></i></a></li>
+                        <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="d-inline"><a class="instagram" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- formulário de login -->
+        <div class="col-12 col-md-6">
             <br>
             <h2>LOGIN</h2>
             <br>
@@ -50,21 +69,6 @@
                 <button class="btn btn-dark mt-3" type="submit">Logar</button><br>
                 <a class="e-senha" href="">Esqueceu sua senha?</a>
             </form>
-        </div>
-        <div class="info-box">
-            <h1>ROSA TRIP<br>LOCADORA</h1>
-            <h5>Não tem cadastro?</h5>
-            <form action="{% url 'cadastro' %}" method="GET">
-                <button class="btn btn-light mt-1" type="submit">Cadastrar</button>
-            </form>
-            <div class="social-media"><br><br>
-                <h6>Acesse nossas redes sociais</h6>
-                <ul class="social-icons">
-                    <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fab fa-facebook"></i></a></li>
-                    <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li class="d-inline"><a class="instagram" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </div>

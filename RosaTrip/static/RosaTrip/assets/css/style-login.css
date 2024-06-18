@@ -2,11 +2,6 @@
 /* ---- Developer: Lucas Dickmann ---- */
 /*----------------------------------------------------*/
 
-/*----------------------------------------------------*/
-/* ---- Developer: Lucas Dickmann ---- */
-/*----------------------------------------------------*/
-
-
 /* ---- Style do body ---- */
 body {
     padding-top: 50px;
@@ -22,7 +17,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    width: 70%;
+    width: 90%;
     right: 0;
     left: 0;
     margin: auto;
@@ -30,8 +25,9 @@ body {
     background-color: rgb(17, 53, 26);
 }
 /* ---- Style do formulário de cadastro ---- */
-.col-md-12 {
+.col-12.col-md-6 {
     background-color: #f8f9fa;
+    color: black;
     height: 500px;
     position: absolute;
     top: 50%;
@@ -44,10 +40,6 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column;
-}
-/* ------ Style do botão de cadastro ------ */
-.btn.btn-success {
-    margin-top: 80px;
 }
 /** ------ Style mensagens de erro ------ */
 .messages{
