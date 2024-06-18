@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+body{
+  font-family: 'Mukta', sans-serif;
+	height: 100vh;
+	min-height: 550px;
+	background-image: url(https://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+    overflow-y: hidden;
+}
+a{
+  text-decoration: none;
+  color: #444444;
+}
+.login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align: center;
+    width: 70%;
+	right: 0; left: 0;
+    margin: auto;
+    height: 400px;
+    background-color: rgb(17, 53, 26);
+}
+
+.white-panel{
+    background-color: rgba(255,255, 255, 1);
+    height: 500px;
+    position: absolute;
+    top: -50px;
+    width: 30%;
+    right: calc(60% - 50px);
+    transition: .3s ease-in-out;
+    z-index: 0;
+    box-shadow: 0 0 20px 7px #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.white-panel input[type="text"], .white-panel input[type="password"]{
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.messages{
+    list-style: none;
+}
+.messages li.error{
+    background-color: #d10216;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.btn.active{
+    background-color: #000000; !important;
+    color: white;
+    border: none;
+    width: 45%;
+}
+
+.info-box{
+    color: black;
+    width: 35%;
+    padding:0 50px;
+    top: 30%;
+    right: 10%;
+    position: absolute;
+    text-align: center;
+}
+
+.social-media{
+    margin-top: auto;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    background-color: #eceeef;
+    color:#818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}

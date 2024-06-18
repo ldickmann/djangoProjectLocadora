@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Login - RosaTrip Locadora</title>
+
+    <title>TEST</title>
 
     {% load static %}
 
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css.map' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/login-page.css' %}">
-    
-    <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/test-login.css' %}">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 
 </head>
 
-<body class="login-page">
+<body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom" id="mainNav">
     <div class="container">
@@ -29,73 +27,62 @@
             <i class="fa fa-align-justify"></i>
         </button>
     </div>
-    
+
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'index' %}">HOME</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'cadastro' %}">CADASTRO</a>
-            </li>
         </ul>
     </div>
 </nav>
 
-<main>
-    <div class="login-block">
-        <img class="logo-img" src="{% static 'RosaTrip/assets/image/logo-rosaTrip.jpg' %}" alt="Scancode">
-        <h1>Login - RosaTrip Locadora</h1>
-        
-        <form action="{% url 'login' %}" method="POST">
-            
-            {% csrf_token %}
-
-            <hr class="hr-xs">
-
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-envelope ti-username"></i></span>
-                    <label>
-                        <input type="text" class="form-control" placeholder="Email" name="email">
-                    </label>
+<div class="login-reg-panel">
+    <form action="{% url 'test_login' %}" method="POST">
+        {% csrf_token %}
+        <div class="white-panel">
+            <br>
+            <h2>LOGIN</h2>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <input class="form-control form-control-lg" type="text" placeholder="Email" name="email">
                 </div>
             </div>
-
-            <hr class="hr-xs">
-
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-lock ti-unlock"></i></span>
-                    <label>
-                        <input type="password" class="form-control" placeholder="Senha" name="senha">
-                    </label>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <input class="form-control form-control-lg" type="password" placeholder="Senha" name="senha">
                 </div>
             </div>
-
-            <button class="btn btn-primary btn-block" type="submit">Logar</button>
             <br>
-            <br>
-
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+            <button class="btn btn-dark mb-3" type="submit">Logar</button>
+                </div>
+            </div>
+            <a href="">Esqueceu sua senha?</a>
             <div class="social-media">
                 <h6>Acesse nossas redes sociais</h6>
                 <ul class="social-icons">
-                    <li><a class="facebook" href="https://facebook.com.br"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="linkedin" href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fa fa-facebook"></i></a></li>
+                    <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li class="d-inline"><a class="linkedin" href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
+        </div>
+    </form>
 
-        </form>
-
+    <div class="info-box">
+        <h1>ROSA TRIP - LOCADORA</h1>
+        <br>
+        <h3>Não tem cadastro?</h3>
+        <a href="/cadastro/" class="btn btn-dark btn-lg col-md-4" role="button" aria-pressed="true">Cadastrar</a>
     </div>
+</div>
 
-</main>
-
-<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js.map' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/bootstrap.min.js.map' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/testLogin.js' %}"></script>
 
 </body>
 </html>
