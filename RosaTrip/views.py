@@ -37,9 +37,6 @@ def login(request):
 # A view cadastro é responsável por cadastrar um usuário.
 def cadastro(request):
     if request.method == "POST":
-        form = CadastroForm()
-        return render(request, 'cadastro.html', {'form': form})
-    else:
         form = CadastroForm(request.POST)
         if form.is_valid():
             password = form.cleaned_data['password1']
@@ -53,13 +50,16 @@ def cadastro(request):
                 is_active=False  # Define o usuário como inativo inicialmente
             )
 
-            enviar_cadastro(user)  # Envia a notificação de aprovação
+            enviar_cadastro(user)
 
             messages.success(request, 'Cadastro enviado para aprovação. Aguarde nosso contato!')
             return redirect('login')
         else:
             messages.error(request, 'Erro ao cadastrar. Verifique os dados informados.')
-        return render(request, 'cadastro.html', {'form': form})
+            return render(request, 'cadastro.html', {'form': form})
+    else:
+        form = CadastroForm()
+    return render(request, 'cadastro.html', {'form': form})
 
 
 # A view veiculos é responsável por listar os veículos cadastrados.
