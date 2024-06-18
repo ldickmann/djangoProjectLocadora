@@ -1,4 +1,4 @@
-# Projeto Locadora de Veículos desenvolvido com Django Framework
+# Projeto Locadora de Veículos desenvolvido com Django Framework - Projeto em finalização
 ## Rosa Trip Locadora
 
 ### Projeto pessoal de uma locadora de veículos.
@@ -11,4 +11,4 @@ O sistema de autenticação utiliza o "Auth" implementando no Django, possibilit
 #### Front end desenvolvido em HTML5, CSS3 e JavaScript, com BootStrap v5 e o Django Framework.
 Dispõe da index.html a page principal de acesso dos usuários e clientes, além de pages de login, cadastro e lista de veículos de uso interno da empresa.
 
-# Autor Lucas E. Dickmann - Developer
+### Autor Lucas E. Dickmann - Developer
