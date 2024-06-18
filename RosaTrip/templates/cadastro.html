@@ -11,49 +11,50 @@
     {% load static %}
 
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/login-page.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
+
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 
 </head>
 
 <body class="cadastro-page">
 
-    <form action="{% url 'cadastro' %}" method="POST">
-        
-        {% csrf_token %}
-        
-        <h1>Cadastro - RosaTrip Locadora</h1>
-        <br>
-        <label>
-            <input type="text" placeholder="Username" name="username">
-        </label>
-        <br>
-        <label>
-            <input type="email" placeholder="Email" name="email">
-        </label>
-        <br>
-        <label>
-            <input type="password" placeholder="Senha" name="senha">
-        </label>
-        <br>
-        <input type="submit" value="Cadastrar">
-        
-    </form>
+<div class="panel col-form-label">
 
-<main>
 
-    <div class="cadastrar-block">
-
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <br>
+            <h2>CADASTRO</h2>
+            <br>
+            <form action="{% url 'cadastro' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="{{ form.username.id_for_label }}">Nome de Usuário</label>
+                    {{ form.username }}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.email.id_for_label }}">Email</label>
+                    {{ form.email }}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.senha.id_for_label }}">Senha</label>
+                    {{ form.password1 }}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.senha.id_for_label }}">Confirme a Senha</label>
+                    {{ form.password2 }}
+                </div>
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+            </form>
+        </div>
     </div>
 
-</main>
-
+</div>
 
 <script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js.map' %}"></script>
-
 
 </body>
 </html>

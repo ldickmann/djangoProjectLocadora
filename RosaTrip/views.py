@@ -1,10 +1,11 @@
-from django.http import HttpResponse
+from django.contrib.auth.hashers import make_password
+from .forms import CadastroForm
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login as auth_login
 from django.contrib import messages
-from .models import Veiculo
+from .models import Veiculo, CadastroPendente
 from .forms import VeiculoForm
+from .utils import enviar_cadastro
 
 
 def index(request):
@@ -30,21 +31,26 @@ def login(request):
 
 def cadastro(request):
     if request.method == "GET":
-        return render(request, 'cadastro.html')
+        form = CadastroForm()
+        return render(request, 'cadastro.html', {'form': form})
     else:
-        username = request.POST.get('email')
-        email = request.POST.get('email')
-        password = request.POST.get('senha')
+        form = CadastroForm(request.POST)
+        if form.is_valid():
+            password = form.cleaned_data['password1']
+            password_hash = make_password(password)
+            cadastro_pendente = CadastroPendente.objects.create(
+                username=form.cleaned_data['username'],
+                email=form.cleaned_data['email'],
+                password=password_hash
+            )
 
-        user = User.objects.filter(username=username).first()
+            enviar_cadastro(cadastro_pendente)
 
-        if user:
-            return HttpResponse('Usuário com este username já existente')
-
-        user = User.objects.create_user(username=username, email=email, password=password)
-        user.save()
-
-        return HttpResponse(username)
+            messages.success(request, 'Dados cadastrados enviados com sucesso!')
+            return redirect('login')
+        else:
+            messages.error(request, 'Erro ao cadastrar. Verifique os dados informados.')
+        return render(request, 'cadastro.html', {'form': form})
 
 
 def lista_veiculos(request):

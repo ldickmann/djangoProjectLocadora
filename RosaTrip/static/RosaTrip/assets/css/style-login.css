@@ -53,6 +53,14 @@ a{
     width: 45%;
 }
 
+.small-text-1 {
+    font-size: 12px;
+}
+
+.small-text {
+    font-size: 11px;
+}
+
 .info-box{
     color: black;
     width: 35%;

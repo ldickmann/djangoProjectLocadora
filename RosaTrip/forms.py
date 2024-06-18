@@ -1,6 +1,5 @@
 from django import forms
 from . models import Veiculo
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
 
@@ -10,6 +9,7 @@ class VeiculoForm(forms.ModelForm):
         fields = '__all__'
 
 
+# Classe de formulário de login
 class LoginForm(forms.Form):
     username = forms.CharField(
         widget=forms.TextInput(
@@ -27,15 +27,18 @@ class LoginForm(forms.Form):
         ))
 
 
-class SignUpForm(UserCreationForm):
+# Classe de formulário de cadastro
+class CadastroForm(forms.Form):
     username = forms.CharField(
+        label='Nome de Usuário',
         widget=forms.TextInput(
             attrs={
-                "placeholder": "Username",
+                "placeholder": "Nome de Usuário",
                 "class": "form-control"
             }
         ))
     email = forms.EmailField(
+        label='Email',
         widget=forms.EmailInput(
             attrs={
                 "placeholder": "Email",
@@ -43,19 +46,32 @@ class SignUpForm(UserCreationForm):
             }
         ))
     password1 = forms.CharField(
+        label='Senha',
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Password",
+                "placeholder": "Senha",
                 "class": "form-control"
             }
         ))
     password2 = forms.CharField(
+        label='Confirmação de Senha',
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Password check",
+                "placeholder": "Confirme sua Senha",
                 "class": "form-control"
             }
         ))
+
+    # Método de validação de senha
+    def clean(self):
+        cleaned_data = super().clean()
+        password1 = cleaned_data.get('password1')
+        password2 = cleaned_data.get('password2')
+
+        if password1 and password2 and password1 != password2:
+            raise forms.ValidationError('As senhas não conferem')
+
+        return cleaned_data
 
     class Meta:
         model = User
