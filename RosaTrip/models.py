@@ -2,10 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-class Trip(models.Model):
-    views = models.IntegerField(default=0)
-
-
 class Veiculo(models.Model):
     marca = models.CharField(max_length=100)
     modelo = models.CharField(max_length=100)

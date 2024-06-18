@@ -11,10 +11,6 @@ def index(request):
     return render(request, 'index.html')
 
 
-def test_login(request):
-    return render(request, 'test-login.html')
-
-
 def login(request):
     if request.method == "GET":
         return render(request, 'login.html')
@@ -26,10 +22,10 @@ def login(request):
 
         if user:
             auth_login(request, user)
-
-            return redirect('lista_veiculos')
+            return redirect('veiculos')
         else:
-            return HttpResponse('Acesso negado')
+            messages.error(request, 'Acesso Negado. Verifique seu email e senha.')
+            return redirect('login')
 
 
 def cadastro(request):
@@ -54,7 +50,7 @@ def cadastro(request):
 def lista_veiculos(request):
     veiculos = Veiculo.objects.all()
     context = {'veiculos': veiculos}
-    return render(request, 'lista_veiculos.html', context)
+    return render(request, 'veiculos.html', context)
 
 
 def add_veiculo(request):
@@ -67,7 +63,7 @@ def add_veiculo(request):
     else:
         form = VeiculoForm()
     context = {'form': form}
-    return render(request, 'add_veiculo.html', context)
+    return render(request, 'add-veiculo.html', context)
 
 
 def edit_veiculo(request, pk):
@@ -81,7 +77,7 @@ def edit_veiculo(request, pk):
     else:
         form = VeiculoForm(instance=veiculo)
     context = {'form': form}
-    return render(request, 'edit_veiculo.html', context)
+    return render(request, 'edit-veiculo.html', context)
 
 
 def del_veiculo(request, pk):
@@ -91,4 +87,4 @@ def del_veiculo(request, pk):
         messages.success(request, 'Veículo excluído com sucesso!')
         return redirect('lista_veiculos')
     context = {'veiculo': veiculo}
-    return render(request, 'del_veiculo.html', context)
+    return render(request, 'del-veiculo.html', context)

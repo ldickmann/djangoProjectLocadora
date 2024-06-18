@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TEST</title>
+    <title>LOGIN - ROSA TRIP LOCADORA</title>
 
     {% load static %}
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css.map' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
 
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/test-login.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-login.css' %}">
 
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 
@@ -38,21 +38,30 @@
 </nav>
 
 <div class="login-reg-panel">
-    <form action="{% url 'test_login' %}" method="POST">
+    <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}
         <div class="white-panel">
             <br>
             <h2>LOGIN</h2>
             <br>
+            
+            {% if messages %} 
+                <ul class="messages"> 
+                    {% for message in messages %} 
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li> 
+                    {% endfor %} 
+                </ul> 
+            {% endif %}
+        
             <div class="row justify-content-center">
                 <div class="col-md-5">
-                    <input class="form-control form-control-lg" type="text" placeholder="Email" name="email">
+                    <label><input class="form-control form-control-lg" type="text" placeholder="Email" name="email"></label>
                 </div>
             </div>
             <br>
             <div class="row justify-content-center">
                 <div class="col-md-5">
-                    <input class="form-control form-control-lg" type="password" placeholder="Senha" name="senha">
+                    <label><input class="form-control form-control-lg" type="password" placeholder="Senha" name="senha"></label>
                 </div>
             </div>
             <br>
