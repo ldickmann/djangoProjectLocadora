@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Cadastro - RosaTrip Locadora</title>
 
     {% load static %}
-
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
-
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-cadastro.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
-
 </head>
 
-<body class="cadastro-page">
+<body>
 
-<div class="panel col-form-label">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#mainNav">CADASTRO - ROSATRIP LOCADORA</a>
+        <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-align-justify"></i>
+        </button>
+    </div>
 
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">HOME</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <div class="row justify-content-center">
-        <div class="col-md-2">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
             <br>
             <h2>CADASTRO</h2>
             <br>
             <form action="{% url 'cadastro' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
-                    <label for="{{ form.username.id_for_label }}">Nome de Usuário</label>
+                    <label for="{{ form.username.id_for_label }}"></label>
                     {{ form.username }}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.email.id_for_label }}">Email</label>
+                    <label for=" {{ form.email.id_for_label }}"></label>
                     {{ form.email }}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.senha.id_for_label }}">Senha</label>
+                    <label for="{{ form.senha.id_for_label }}"></label>
                     {{ form.password1 }}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.senha.id_for_label }}">Confirme a Senha</label>
+                    <label for="{{ form.senha.id_for_label }}"></label>
                     {{ form.password2 }}
                 </div>
-                <button type="submit" class="btn btn-success">Cadastrar</button>
+                <button type="submit" class="btn btn-dark mt-3">Cadastrar</button>
             </form>
         </div>
     </div>
-
 </div>
 
 <script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>

@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 
+# Criação das rotas, através do método path, que direcionam as requisições para as views correspondentes.
 urlpatterns = [
     path('', views.index, name='index'),
     path('accounts/login/', views.login, name='login'),

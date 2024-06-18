@@ -1,8 +1,8 @@
 from django import forms
 from . models import Veiculo
-from django.contrib.auth.models import User
 
 
+# Classe de formulário de veículo
 class VeiculoForm(forms.ModelForm):
     class Meta:
         model = Veiculo
@@ -12,13 +12,16 @@ class VeiculoForm(forms.ModelForm):
 # Classe de formulário de login
 class LoginForm(forms.Form):
     username = forms.CharField(
+        label='Nome de Usuário',
         widget=forms.TextInput(
             attrs={
-                "placeholder": "Username",
+                "placeholder": "Nome de Usuário",
                 "class": "form-control"
             }
         ))
+
     password = forms.CharField(
+        label='Senha',
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Password",
@@ -72,7 +75,3 @@ class CadastroForm(forms.Form):
             raise forms.ValidationError('As senhas não conferem')
 
         return cleaned_data
-
-    class Meta:
-        model = User
-        fields = ('username', 'email', 'password1', 'password2')

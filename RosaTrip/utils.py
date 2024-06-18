@@ -14,6 +14,6 @@ def enviar_cadastro(cadastro):
     """
 
     send_mail(
-        assunto,
-        mensagem,
+        "assunto",
+        "mensagem",
         'qualteuemail@gmail.com', ['email.gerente@exemplo.com.br'])

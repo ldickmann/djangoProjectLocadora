@@ -7,20 +7,15 @@
     <title>LOGIN - ROSA TRIP LOCADORA</title>
 
     {% load static %}
-
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css.map' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
-
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-login.css' %}">
-
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
-
 </head>
 
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#mainNav">LOGIN - ROSATRIP LOCADORA</a>
         <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,56 +32,42 @@
     </div>
 </nav>
 
-<div class="login-reg-panel">
-    <form action="{% url 'login' %}" method="POST">
-        {% csrf_token %}
-        <div class="white-panel">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
             <br>
             <h2>LOGIN</h2>
             <br>
-            
-            {% if messages %} 
-                <ul class="messages"> 
-                    {% for message in messages %} 
-                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li> 
-                    {% endfor %} 
-                </ul> 
-            {% endif %}
-        
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <label><input class="form-control form-control-lg" type="text" placeholder="Email" name="email"></label>
-                </div>
-            </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <label><input class="form-control form-control-lg" type="password" placeholder="Senha" name="senha"></label>
-                </div>
-            </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-            <button class="btn btn-dark mb-3 small-text-1" type="submit">Logar</button>
-                </div>
-            </div>
-            <a href="">Esqueceu sua senha?</a>
-            <div class="social-media">
-                <h6>Acesse nossas redes sociais</h6>
-                <ul class="social-icons">
-                    <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fa fa-facebook"></i></a></li>
-                    <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
-                    <li class="d-inline"><a class="linkedin" href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
                 </ul>
-            </div>
+            {% endif %}
+            <form action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn btn-dark mt-3" type="submit">Logar</button><br>
+                <a href="">Esqueceu sua senha?</a>
+                <div class="social-media">
+                    <h6>Acesse nossas redes sociais</h6>
+                    <ul class="social-icons">
+                        <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fa fa-facebook"></i></a></li>
+                        <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li class="d-inline"><a class="linkedin" href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </form>
         </div>
-    </form>
 
-    <div class="info-box">
-        <h1>ROSA TRIP <br> LOCADORA</h1>
-        <br>
-        <h3>Não tem cadastro?</h3>
-        <a href="/accounts/cadastro/" class="btn btn-dark btn-sm col-md-4 small-text" role="button" aria-pressed="true">Cadastrar</a>
+
+        <div class="info-box">
+            <h1>ROSA TRIP <br> LOCADORA</h1>
+            <br>
+            <h3>Não tem cadastro?</h3>
+            <a href="/accounts/cadastro/" class="btn btn-dark btn-sm col-md-4 small-text" role="button" aria-pressed="true">Cadastrar</a>
+        </div>
     </div>
 </div>
 

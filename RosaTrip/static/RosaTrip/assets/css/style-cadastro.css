@@ -2,10 +2,6 @@
 /* ---- Developer: Lucas Dickmann ---- */
 /*----------------------------------------------------*/
 
-/*----------------------------------------------------*/
-/* ---- Developer: Lucas Dickmann ---- */
-/*----------------------------------------------------*/
-
 
 /* ---- Style do body ---- */
 body {
@@ -48,47 +44,4 @@ body {
 /* ------ Style do botão de cadastro ------ */
 .btn.btn-success {
     margin-top: 80px;
-}
-
-.messages{
-    list-style: none;
-}
-.messages li.error{
-    background-color: #d10216;
-    color: white;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    width: 90%;
-}
-.info-box{
-    color: black;
-    width: 35%;
-    padding:0 50px;
-    top: 30%;
-    right: 10%;
-    position: absolute;
-    text-align: center;
-}
-.social-media{
-    margin-top: auto;
-}
-.social-icons{
-    display: flex;
-    justify-content: center;
-}
-.social-icons a{
-    background-color: #eceeef;
-    color: #ffffff;
-    font-size: 16px;
-    display: inline-block;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 8px;
-    border-radius: 100%;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
 }

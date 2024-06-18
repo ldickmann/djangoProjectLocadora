@@ -1,8 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.contrib.auth.hashers import make_password
 
 
+# Classe para cadastrar veículos.
 class Veiculo(models.Model):
     marca = models.CharField(max_length=100)
     modelo = models.CharField(max_length=100)
@@ -15,14 +15,3 @@ class Veiculo(models.Model):
 
     def __str__(self):
         return f"{self.marca} {self.modelo} {self.ano} {self.cor} {self.preco} {self.disponivel}"
-
-
-# Classe para cadastrar usuário, que ficará pendente.
-class CadastroPendente(models.Model):
-    username = models.CharField(max_length=100)
-    email = models.EmailField()
-    password = models.CharField(max_length=100)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f"{self.username} {self.email} {self.created_at}"

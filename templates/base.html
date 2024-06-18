@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <!-- Bootstrap 5 CSS (local) -->
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
+    <!-- Bootstrap 5 JavaScript (local) -->
+    <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
