@@ -40,6 +40,22 @@ class CadastroForm(forms.Form):
                 "class": "form-control"
             }
         ))
+    first_name = forms.CharField(
+        label='Nome',
+        widget=forms.TextInput(
+            attrs={
+                "placeholder": "Nome",
+                "class": "form-control"
+            }
+        ))
+    last_name = forms.CharField(
+        label='Sobrenome',
+        widget=forms.TextInput(
+            attrs={
+                "placeholder": "Sobrenome",
+                "class": "form-control"
+            }
+        ))
     email = forms.EmailField(
         label='Email',
         widget=forms.EmailInput(
@@ -65,7 +81,7 @@ class CadastroForm(forms.Form):
             }
         ))
 
-    # Método de validação de senha
+    # Método/Função de validação de senha
     def clean(self):
         cleaned_data = super().clean()
         password1 = cleaned_data.get('password1')

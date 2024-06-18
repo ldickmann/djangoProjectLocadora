@@ -8,7 +8,7 @@
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/../static/RosaTrip/assets/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-cadastro.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 </head>
@@ -34,28 +34,13 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 cadastro">
             <br>
             <h2>CADASTRO</h2>
             <br>
             <form action="{% url 'cadastro' %}" method="POST">
                 {% csrf_token %}
-                <div class="form-group">
-                    <label for="{{ form.username.id_for_label }}"></label>
-                    {{ form.username }}
-                </div>
-                <div class="form-group">
-                    <label for=" {{ form.email.id_for_label }}"></label>
-                    {{ form.email }}
-                </div>
-                <div class="form-group">
-                    <label for="{{ form.senha.id_for_label }}"></label>
-                    {{ form.password1 }}
-                </div>
-                <div class="form-group">
-                    <label for="{{ form.senha.id_for_label }}"></label>
-                    {{ form.password2 }}
-                </div>
+                {{ form }}
                 <button type="submit" class="btn btn-dark mt-3">Cadastrar</button>
             </form>
         </div>

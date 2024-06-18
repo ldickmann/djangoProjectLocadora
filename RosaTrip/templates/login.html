@@ -8,11 +8,10 @@
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css.map' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/baguetteBox.min.css' %}">
+    <link rel="stylesheet" fontawesome="all" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-login.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
-</head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom" id="mainNav">
@@ -49,30 +48,32 @@
                 {% csrf_token %}
                 {{ form }}
                 <button class="btn btn-dark mt-3" type="submit">Logar</button><br>
-                <a href="">Esqueceu sua senha?</a>
-                <div class="social-media">
-                    <h6>Acesse nossas redes sociais</h6>
-                    <ul class="social-icons">
-                        <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fa fa-facebook"></i></a></li>
-                        <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
-                        <li class="d-inline"><a class="linkedin" href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
+                <a class="e-senha" href="">Esqueceu sua senha?</a>
             </form>
         </div>
-
-
         <div class="info-box">
-            <h1>ROSA TRIP <br> LOCADORA</h1>
-            <br>
-            <h3>Não tem cadastro?</h3>
-            <a href="/accounts/cadastro/" class="btn btn-dark btn-sm col-md-4 small-text" role="button" aria-pressed="true">Cadastrar</a>
+            <h1>ROSA TRIP<br>LOCADORA</h1>
+            <h5>Não tem cadastro?</h5>
+            <form action="{% url 'cadastro' %}" method="GET">
+                <button class="btn btn-light mt-1" type="submit">Cadastrar</button>
+            </form>
+            <div class="social-media"><br><br>
+                <h6>Acesse nossas redes sociais</h6>
+                <ul class="social-icons">
+                    <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fab fa-facebook"></i></a></li>
+                    <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li class="d-inline"><a class="instagram" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
 <script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/testLogin.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/aos.min.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/bs-init.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/baguetteBox.min.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/creative.js' %}"></script>
 
 </body>
 </html>
