@@ -1,4 +1,4 @@
-# Projeto Locadora de Veículos com o framework Django e em Python
+# Projeto Locadora de Veículos desenvolvido com Django Framework
 ## Rosa Trip Locadora
 
 ### Projeto pessoal de uma locadora de veículos.
