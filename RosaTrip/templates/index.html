@@ -10,18 +10,15 @@
     {% load static %}
 
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/aos.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/baguetteBox.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bs-theme-overrides.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.css' %}">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&display=swap">
-    
     <link rel="stylesheet" fontawesome="all" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
           
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style.css' %}">
-
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 
 </head>
@@ -29,7 +26,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Rosa Trip LOCADORA</a>
+            <a class="navbar-brand" href="index.html"><h3>Rosa Trip LOCADORA</h3></a>
             <button class="navbar-toggler icone-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME</a>
+                        <a class="nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">VEÍCULOS</a>
@@ -156,7 +153,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4">
                     <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/bwm-silver.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/bwm-silver.jpg' %}">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/bwm-silver.jpg' %}" alt="BMW Silver">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>FROTA</span></div>
@@ -167,7 +164,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/car.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/car.jpg' %}">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/car.jpg' %}" alt="Car">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>FROTA</span></div>
@@ -178,7 +175,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/compass.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/compass.jpg' %}">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/compass.jpg' %}" alt="Compass">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>FROTA</span></div>
@@ -189,7 +186,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/popular.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular.jpg' %}">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular.jpg' %}" alt="Popular">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>FROTA</span></div>
@@ -200,7 +197,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/popular-one.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular-one.jpg' %}">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular-one.jpg' %}" alt="Popular One">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>FROTA</span></div>
@@ -211,7 +208,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/mercedez.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/mercedez.jpg' %}">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/mercedez.jpg' %}" alt="Mercedez">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>FROTA</span></div>
@@ -247,40 +244,46 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-light">
-        <div class="container-fluid py-3">
-            <div class="row">
-                <div class="col-4">
-                    <ul class="nav flex-column">
-                        <li class="nav-link"><a href="#">Retornar à Loja</a></li>
-                        <li class="nav-link"><a href="#">Sobre</a></li>
-                        <li class="nav-link"><a href="#">Contato</a></li>
-                        <li class="nav-link"><a href="#">Suporte</a></li>
-                    </ul>
-                </div>
-                <div class="col-8">
-                    <p>
-                        Somos uma empresa referência na região, pois oferecemos a melhor experiência em locação de carros, com veículos de extrama qualidade, conforto e segurança.
-                    </p>
-                    <ul class="nav">
-                        <li class="nav-link"><i class="fab fa-facebook fa-3x"></i></li>
-                        <li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li>
-                        <li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li>
-                        <li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li>
-                    </ul>
-                </div>
+    <div class="container-fluid" id="footer">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+            <div class="col mb-3">
+                <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"></a>
+                <h4>
+                    Somos uma empresa referência na região, pois oferecemos a melhor experiência em locação de
+                    carros, com veículos de extrema qualidade, conforto e segurança.
+                </h4>
             </div>
-        </div>
-        <div class="text-center" >
-            &copy 2024 Copyright: <a href="#">Lucas Dickmann Web Developer</a>
-        </div>
-    </footer>
-
+            <div class="col mb-3">
+            </div>
+            <div class="col mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-link"><a href="#">Retornar à Loja</a></li>
+                    <li class="nav-link"><a href="#">Sobre</a></li>
+                    <li class="nav-link"><a href="#">Contato</a></li>
+                    <li class="nav-link"><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Redes Sociais</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-link"><i class="fab fa-facebook fa-3x"></i></li>
+                    <li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li>
+                    <li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li>
+                    <li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="container-fluid bg-dark text-center">
+        &copy 2024 Copyright: <a href="#">Lucas Dickmann Web Developer</a>
+    </div>
+    
     <script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'RosaTrip/assets/js/aos.min.js' %}"></script>
     <script src="{% static 'RosaTrip/assets/js/bs-init.js' %}"></script>
-    <script src="{% static 'RosaTrip/assets/js/baguetteBox.min.js' %}"></script>
     <script src="{% static 'RosaTrip/assets/js/creative.js' %}"></script>
+    <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'RosaTrip/assets/js/bootstrap.esm.js' %}"></script>
+    <script src="{% static 'RosaTrip/assets/js/bootstrap.js' %}"></script>
 
 </body>
 

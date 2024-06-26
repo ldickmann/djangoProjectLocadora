@@ -13,14 +13,8 @@ body {
 }
 /* ---- Style do container ---- */
 .row {
-    position: relative;
-    top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    width: 90%;
-    right: 0;
-    left: 0;
-    margin: auto;
     height: 400px;
     background-color: rgb(17, 53, 26);
 }
@@ -34,12 +28,10 @@ body {
     transform: translateY(-50%);
     width: 30%;
     right: calc(60% - 50px);
-    z-index: 0;
+    z-index: 1000;
     box-shadow: 0 0 20px 7px #000000;
     border-radius: 20px;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
 }
 /** ------ Style mensagens de erro ------ */
 .messages{
@@ -56,8 +48,6 @@ body {
 /** ------ Style do box de informações ------ */
 .info-box{
     color: black;
-    width: 35%;
-    padding:0 50px;
     top: 17%;
     right: 10%;
     position: absolute;

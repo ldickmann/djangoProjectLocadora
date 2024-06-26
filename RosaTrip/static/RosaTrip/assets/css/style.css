@@ -4,13 +4,11 @@
 
 
 /* ---- Navbar ---- */
-
 #mainNav .navbar-brand {
     color: #000000; !important;
 }
 
 /* ---- Media Queries ---- */
-
 @media (min-width: 992px) {
     #mainNav .navbar-brand {
         color: #000000; !important;
@@ -19,7 +17,6 @@
         color: #000000; !important;
     }
 }
-
 @media (max-width: 768px) {
     #mainNav .navbar-nav {
     }
@@ -30,7 +27,6 @@
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 }
-
 @media (max-width: 420px) {
     #mainNav .navbar-nav {
     }
@@ -43,7 +39,6 @@
 }
 
 /* ---- Header ---- */
-
 .custom-header {
     background-size: cover;
     background-repeat: repeat-x;
@@ -51,11 +46,9 @@
     background-attachment: fixed;
     height: 100vh;
 }
-
 .custom-header .container {
     padding-top: 100px;
 }
-
 .header-text {
     color: white;
     font-size: 3em;
@@ -63,7 +56,6 @@
     text-shadow: 2px 2px 4px black;
     margin-top: 30px;
 }
-
 .saiba-mais {
     display: inline-block;
     padding: 10px 20px;
@@ -76,35 +68,28 @@
     border: 1px solid transparent;
     border-radius: 300px;
     transition: all .15s ease-in-out;
-
     background-color: var(--bs-primary);
-    color: var(--bs-emphasis-color);
 }
-
-/* Media Queries (Breakpoints) */
 
 /* Media Queries (Breakpoints) */
 @media (max-width: 1200px) {
     .header-text {
         font-size: 2.5em;
-        margin-top: 20px; /* Ajuste a margem conforme necessário */
+        margin-top: 20px;
     }
 }
-
 @media (max-width: 992px) {
     .custom-header {
         height: 90vh;
     }
     .custom-header .container {
-        padding-top: 110px; /* Aumentar o padding em telas menores */
+        padding-top: 110px;
     }
     .header-text {
         font-size: 2em;
-        margin-top: 10px; /* Ajuste a margem conforme necessário */
+        margin-top: 10px;
     }
-    /* ... Outros estilos ... */
 }
-
 @media (max-width: 768px) {
     .custom-header {
         height: 80vh;
@@ -114,11 +99,9 @@
     }
     .header-text {
         font-size: 1.5em;
-        margin-top: 0;  /* Remover a margem em telas pequenas */
+        margin-top: 0;
     }
-    /* ... Outros estilos ... */
 }
-
 @media (max-width: 576px) {
     .custom-header {
         height: 70vh;
@@ -130,62 +113,45 @@
         font-size: 1.2em;
         margin-top: 0;
     }
-    /* ... Outros estilos ... */
 }
 
 /* Estilos para a seção "About" */
-
 #about {
-    background-color: var(--bs-btn-border-color); /* Define a cor de fundo */
+    background-color: var(--bs-btn-border-color);
 }
-
-#about .text-white { /* Define a cor do texto */
+#about .text-white {
     color: white;
 }
-
-#about .text-faded { /* Define a cor do texto */
-    color: #f8f9fa; /* Use uma cor de texto que contraste com o fundo */
+#about .mb-4 {
+    margin-bottom: 1.5rem;
 }
-
-#about .mb-4 { /* Define a margem inferior do parágrafo */
-    margin-bottom: 1.5rem; /* Ajuste o valor se necessário */
-}
-
-#about .section-heading { /* Estilos para o título */
+#about .section-heading {
     font-size: 2rem;
     font-weight: bold;
 }
 
-
-
 /* ---- Colors ---- */
-
 .bg-primary {
     background-color: #11351a !important;
 }
-
-.bg-dark{
-    background-color: #11351a !important;
+.bg-dark.text-center {
+    color: #ffffff; !important;
 }
 
-/* ---- Portfolio ---- */
-
+/* ---- Frota ---- */
 .container-fluid .row.g-0.popup-gallery {
     margin-top: -20px;
 
 }
-
 .p-0 {
   padding: 0 !important;
   background-color: #11351a !important;
 }
-
 #contact .col-lg-8.text-center.mx-auto {
     color: #000000; !important;
 }
 
 /* ---- Styles for the floating button ---- */
-
 .float {
     display: inline-block;
     background-color: #25d366;
@@ -234,17 +200,15 @@
 }
 
 /* ---- Styles for the baseboard ---- */
+footer {
+    background-color: #11351a;
+    color: #ffffff;
+    padding: 50px 0;
+}
 
 footer .nav-link a {
     color: #000000; !important;
-
 }
-
-footer .text-center a {
-    color: blue; !important;
-}
-
-footer img {
-    padding: 20px;
-    background-color: #333;
+footer .nav-link {
+    color: #000000; !important;
 }
