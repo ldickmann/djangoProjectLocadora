@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cadastro - RosaTrip Locadora</title>
-
+    <title>CADASTRO - ROSA TRIP LOCADORA</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/fonts/../static/RosaTrip/assets/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-cadastro.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 </head>
-
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#mainNav">CADASTRO - ROSATRIP LOCADORA</a>
@@ -22,34 +17,32 @@
             <i class="fa fa-align-justify"></i>
         </button>
     </div>
-
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">HOME</a>
+                <a class="nav-link" href="{% url 'index.html' %}">HOME</a>
             </li>
         </ul>
     </div>
 </nav>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 cadastro">
-            <br>
-            <h2>CADASTRO</h2>
-            <br>
-            <form action="{% url 'cadastro' %}" method="POST">
-                {% csrf_token %}
-                {{ form }}
-                <button type="submit" class="btn btn-dark mt-3">Cadastrar</button>
-            </form>
+<header class="custom-header" style="background-image: url({% static 'RosaTrip/assets/image/fucky.jpg' %}); height: 100vh; position: relative;">
+    <div class="container-sm">
+        <div class="row row-flex">
+            <div class="col-md-12 cadastro">
+                <br>
+                <h2>CADASTRO</h2>
+                <br>
+                <form action="{% url 'cadastro' %}" method="POST">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button type="submit" class="btn btn-dark mt-3">Cadastrar</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-
+</header>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js.map' %}"></script>
-
 </body>
 </html>

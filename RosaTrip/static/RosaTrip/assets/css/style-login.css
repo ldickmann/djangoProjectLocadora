@@ -2,7 +2,7 @@
 /* ---- Developer: Lucas Dickmann ---- */
 /*----------------------------------------------------*/
 
-/* ---- Style do cabeçalho ---- */
+/** ---- Style do cabeçalho ---- **/
 .custom-header {
     background-size: cover;
     background-position: center;
@@ -15,7 +15,7 @@
     justify-content: center;
 }
 
-/* ---- Style do container central ---- */
+/** ---- Style do container central ---- **/
 .row {
     text-align: center;
     height: 400px;
@@ -24,7 +24,7 @@
     border-radius: 20px;
 }
 
-/** ------ Style do box de informações ------ */
+/** ------ Style do box de informações ------ **/
 .info-box {
     color: white;
     position: relative;
@@ -32,7 +32,7 @@
     left: 20%;
 }
 
-/* ---- Style do formulário de cadastro ---- */
+/** ---- Style do formulário de cadastro ---- **/
 .col-12.col-md-6 {
     background-color: #f8f9fa;
     color: black;
@@ -48,7 +48,7 @@
     padding: 30px;
 }
 
-/** ------ Style mensagens de erro ------ */
+/** ------ Style mensagens de erro ------ **/
 .messages{
     list-style: none;
 }
@@ -60,8 +60,18 @@
     border-radius: 5px;
     width: 90%;
 }
+/** ------ Style do navbar ------ **/
+.navbar-custom {
+    background: linear-gradient(45deg, #000000, #031a0a, #11351a);
+}
+.navbar-brand {
+    color: white;
+}
+.nav-link {
+    color: white;
+}
 
-/** ------Style ícones de redes sociais ------ */
+/** ------Style ícones de redes sociais ------ **/
 .social-media {
     display: flex;
     flex-direction: column;

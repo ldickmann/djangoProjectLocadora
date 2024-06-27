@@ -76,7 +76,7 @@ def add_veiculo(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Veículo cadastrado com sucesso!')
-            return redirect('lista_veiculos')
+            return redirect('veiculos')
     else:
         form = VeiculoForm()
     context = {'form': form}
@@ -91,7 +91,7 @@ def edit_veiculo(request, pk):
         if form.is_valid():
             form.save()
             messages.success(request, 'Veículo editado com sucesso!')
-            return redirect('lista_veiculos')
+            return redirect('veiculos')
     else:
         form = VeiculoForm(instance=veiculo)
     context = {'form': form}
@@ -104,6 +104,6 @@ def del_veiculo(request, pk):
     if request.method == 'POST':
         veiculo.delete()
         messages.success(request, 'Veículo excluído com sucesso!')
-        return redirect('lista_veiculos')
+        return redirect('veiculos')
     context = {'veiculo': veiculo}
     return render(request, 'del-veiculo.html', context)

@@ -2,15 +2,17 @@
 /* ---- Developer: Lucas Dickmann ---- */
 /*----------------------------------------------------*/
 
-
-/* ---- Style do body ---- */
-body {
-    padding-top: 50px;
+/* ---- Style do body & Cabeçalho ---- */
+.custom-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
 }
 /* ---- Style do container ---- */
 .row {
