@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>HOME</title>
-
     {% load static %}
-
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-grid.css' %}">
@@ -18,15 +15,12 @@
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-reboot.rtl.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.rtl.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.rtl.css' %}">
-
     <link rel="stylesheet" fontawesome="all" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
-
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style.css' %}">
 </head>
-
 <body>
+<div class="container-sm">
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
         <div class="container-sm">
             <a class="navbar-brand" href="#"><h3>Rosa Trip LOCADORA</h3>
@@ -60,229 +54,301 @@
             </div>
         </div>
     </nav>
-    <header class="custom-header" style="background-image: url({% static 'RosaTrip/assets/image/homepage-bmw.jpg' %});">
-        <div class="container-sm text-center">
-             <div class="row">
-                <div class="col-sm-12 featured-top">
-                    <h1 class="text-uppercase">
-                        <strong>
-                            <span class="header-text">Explore Novos Horizontes com a Rosa Trip Locadora de Veículos</span>
-                        </strong>
-                    </h1>
-                    <br>
-                </div>
-            </div>
-            <div class="col-sm-8 offset-xl-0 mx-auto">
-                <p class="text-faded mb-5">
-                    <br>
-                    Nossa frota de veículos é cuidadosamente selecionada para atender a todas as suas necessidades de viagem, desde carros compactos e econômicos até utilitários espaçosos e vans confortáveis.
-                    <br>
-                </p>
-                <a class="btn btn-primary btn-xl saiba-mais" role="button" href="#">SAIBA MAIS</a>
+</div>
+<header class="custom-header" style="background-image: url({% static 'RosaTrip/assets/image/homepage-bmw.jpg' %});">
+    <div class="container-sm">
+        <div class="row">
+            <div class="container-sm text-center">
+                <h1 class="text-uppercase">
+                    <strong>
+                        <h1 class="header-text">Explore Novos Horizontes com a Rosa Trip Locadora de Veículos</h1>
+                    </strong>
+                </h1>
             </div>
         </div>
-    </header>
-    <section id="about" class="bg-primary">
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-sm-12 text-center mx-auto">
-                    <h2 class="text-white section-heading">Seu estilo, nosso carro. Encontre o veículo perfeito pra você</h2>
-                    <hr class="light my-4">
-                    <p class="text-faded mb-4" style="font-size: 13px;">
-                        Sua vida, seu ritmo, seu carro. <br>
-                        Experimente a liberdade de dirigir com estilo e segurança, escolhendo o veículo que combina com sua personalidade e seus planos.<br>
-                        Aqui, você encontra carros modernos e confiáveis para te levar mais longe, sem abrir mão do conforto e da praticidade.
-                    </p>
-                    <a class="btn btn-light btn-xl" role="button" href="#">VENHA PARA AS MELHORES TRIPS!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="servicos">
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="section-heading">Seu destino, nossa expertise</h2>
-                    <hr class="my-4">
-                </div>
-            </div>
-        </div>
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3 text-center">
-                    <div class="mx-auto service-box mt-5">
-                        <svg id="map-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-globe-americas" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"></path>
-                        </svg>
-                        <h3 class="mb-3">Sua viagem começa aqui!</h3>
-                        <p class="text-muted mb-0">Para mais informações nos procure, ou venha até nossa loja.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center">
-                    <div class="mx-auto service-box mt-5">
-                        <svg id="right-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                        </svg>
-                        <h3 class="mb-3">Locação e devolução simples e rápida</h3>
-                        <p class="text-muted mb-0">Com uma equipe qualificada, sua locação é feita de forma ágil e descomplicada.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center">
-                    <div class="mx-auto service-box mt-5">
-                        <svg id="people-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-person-arms-up" viewBox="0 0 16 16">
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
-                            <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"></path>
-                        </svg>
-                        <h3 class="mb-3">Nossa prioridade é a sua experiência</h3>
-                        <p class="text-muted mb-0">Na Rosa Trip Locadora você é mais que cliente, é familia!</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center">
-                    <div class="mx-auto service-box mt-5">
-                        <svg id="car-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-car-front-fill" viewBox="0 0 16 16">
-                            <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"></path>
-                        </svg>
-                        <h3 class="mb-3">Frota moderna e veículos de qualidade</h3>
-                        <p class="text-muted mb-0">Sua segurança em primeiro lugar, conte com nossos veículos revisados, modernos e prontos para uma boa trip.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio" class="p-0">
-        <div class="container-sm flex-column">
-            <div class="row">
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/bwm-silver.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/bwm-silver.jpg' %}" alt="BMW Silver">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>FROTA</span></div>
-                                <div class="project-name"><span>ROSA TRIP LOCADORA</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/car.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/car.jpg' %}" alt="Car">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>FROTA</span></div>
-                                <div class="project-name"><span>ROSA TRIP LOCADORA</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/compass.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/compass.jpg' %}" alt="Compass">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>FROTA</span></div>
-                                <div class="project-name"><span>ROSA TRIP LOCADORA</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/popular.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular.jpg' %}" alt="Popular">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>FROTA</span></div>
-                                <div class="project-name"><span>ROSA TRIP LOCADORA</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/popular-one.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular-one.jpg' %}" alt="Popular One">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>FROTA</span></div>
-                                <div class="project-name"><span>ROSA TRIP LOCADORA</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="{% static 'RosaTrip/assets/image/mercedez.jpg' %}">
-                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/mercedez.jpg' %}" alt="Mercedez">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>FROTA</span></div>
-                                <div class="project-name"><span>ROSA TRIP LOCADORA</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-dark">
-    </section>
-    <section id="contact">
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-sm-8 text-center mx-auto">
-                    <h2 class="section-heading">NOS CONTATE</h2>
-                    <hr class="my-4">
-                    <p class="mb-5">Abaixo nossos contatos. Estamos prontos para atendê-lo.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 text-center ms-auto phone-number">
-                    <a href="https://wa.me/5548555152686" target="_blank"><img rel="stylesheet" src="{% static 'RosaTrip/assets/image/icon-whatsapp.png' %}" alt="Whatsapp Icon" style="width: 50px;"></a>
-                    <p>+55 48 555152686</p>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3518.4957009041245!2d-48.64524952359616!3d-28.131394175942138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzUzLjAiUyA0OMKwMzgnMzMuNiJX!5e0!3m2!1spt-BR!2sbr!4v1717449807498!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
-            </div>
-        </div>
-    </section>
+    </div>
+</header>
+<div class="container-sm text-center mx-auto">
     <hr>
-    <div class="container-fluid" id="footer">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
-            <div class="col mb-3">
-                <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"></a>
-                <h4>
-                    Somos uma empresa referência na região, pois oferecemos a melhor experiência em locação de
-                    carros, com veículos de extrema qualidade, conforto e segurança.
-                </h4>
-            </div>
-            <div class="col mb-3">
-            </div>
-            <div class="col mb-3">
-                <ul class="nav flex-column">
-                    <li class="nav-link"><a href="#">Retornar à Loja</a></li>
-                    <li class="nav-link"><a href="#">Sobre</a></li>
-                    <li class="nav-link"><a href="#">Contato</a></li>
-                    <li class="nav-link"><a href="#">Suporte</a></li>
-                </ul>
-            </div>
-            <div class="col mb-3 text-center justify-content-center">
-                <h5>Redes Sociais</h5>
-                <ul class="social-icons">
-                    <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fab fa-facebook"></i></a></li>
-                    <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li class="d-inline"><a class="instagram" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </footer>
+    <p class="text-faded">
+        <br>
+        <strong>
+            Nossa frota de veículos é cuidadosamente selecionada para atender a todas as suas necessidades de viagem,
+            desde carros compactos e econômicos até utilitários espaçosos e vans confortáveis.
+        </strong>
+        <br>
+    </p>
+    <a class="btn btn-dark" role="button" href="#">SAIBA MAIS</a><hr>
+</div>
+<section id="about" class="bg-primary">
+    <div class="container-sm text-center">
+        <h2 class="text-white section-heading">Seu estilo, nosso carro. Encontre o veículo perfeito para você</h2><br>
+        <p class="text-faded text-light">
+            Sua vida, seu ritmo, seu carro.<br>
+            Experimente a liberdade de dirigir com estilo e segurança, escolhendo o veículo que combina com sua personalidade e seus planos.<br>
+            Aqui, você encontra carros modernos e confiáveis para te levar mais longe, sem perder e conforto e a praticidade.
+        </p>
+        <a class="btn btn-light" role="button" href="#"><strong>VENHA PARA AS MELHORES TRIPS!</strong></a>
     </div>
-    <div class="container-fluid bg-dark text-center">
-        &copy 2024 Copyright: <a href="#">Lucas Dickmann Web Developer</a>
+</section>
+<hr>
+<section id="servicos">
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="section">Seu destino, nossa expertise</h2>
+                <hr class="my-4">
+            </div>
+        </div>
     </div>
-
-    <script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.js' %}"></script>
-    <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'RosaTrip/assets/js/bootstrap.esm.js' %}"></script>
-    <script src="{% static 'RosaTrip/assets/js/bootstrap.js' %}"></script>
-    <script src="{% static 'RosaTrip/assets/js/navbarScroll.js' %}"></script>
-
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="mx-auto service-box mt-5">
+                    <svg id="map-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"></path>
+                    </svg>
+                    <h3 class="mb-3">Sua viagem começa aqui!</h3>
+                    <p class="text-muted mb-0">Para mais informações nos procure, ou venha até nossa loja.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="mx-auto service-box mt-5">
+                    <svg id="right-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                    </svg>
+                    <h3 class="mb-3">Locação e devolução simples e rápida</h3>
+                    <p class="text-muted mb-0">Com uma equipe qualificada, sua locação é feita de forma ágil e descomplicada.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="mx-auto service-box mt-5">
+                    <svg id="people-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                        <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"></path>
+                    </svg>
+                    <h3 class="mb-3">Nossa prioridade é a sua experiência</h3>
+                    <p class="text-muted mb-0">Na Rosa Trip Locadora você é mais que cliente, é familia!</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+                <div class="mx-auto service-box mt-5">
+                    <svg id="car-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                        <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"></path>
+                    </svg>
+                    <h3 class="mb-3">Frota moderna e veículos de qualidade</h3>
+                    <p class="text-muted mb-0">Sua segurança em primeiro lugar, conte com nossos veículos revisados, modernos e prontos para uma boa trip.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="frota">
+    <div class="container-sm flex-column">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 my-5">
+                <div class="imagem-com-overlay">
+                    <div class="container-image">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalImagem1">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/bwm-silver.jpg' %}" alt="BMW Silver">
+                        <div class="overlay">
+                            <span class="text-overlay" data-bs-toggle="tooltip" data-bs-placement="top" title="BMW Silver">BMW</span>
+                        </div>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImagem1" tabindex="-1" aria-labelledby="modalImagem1Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalImagem1Label">Frota Rosa Trip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{% static 'RosaTrip/assets/image/bwm-silver.jpg' %}" class="img-fluid" alt="BMW Silver">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 my-5">
+                <div class="imagem-com-overlay">
+                    <div class="container-image">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalImagem2">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/car.jpg' %}" alt="Sedan">
+                        <div class="overlay">
+                            <span class="text-overlay" data-bs-toggle="tooltip" data-bs-placement="top" title="Sedan">Sedan</span>
+                        </div>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImagem2" tabindex="-1" aria-labelledby="modalImagem2Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalImagem1Label">Frota Rosa Trip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{% static 'RosaTrip/assets/image/car.jpg' %}" class="img-fluid" alt="Sedan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 my-5">
+                <div class="imagem-com-overlay">
+                    <div class="container-image">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalImagem3">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/compass.jpg' %}" alt="Compass">
+                        <div class="overlay">
+                            <span class="text-overlay" data-bs-toggle="tooltip" data-bs-placement="top" title="Jeep Compass">Compass</span>
+                        </div>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImagem3" tabindex="-1" aria-labelledby="modalImagem3Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalImagem3Label">Frota Rosa Trip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{% static 'RosaTrip/assets/image/compass.jpg' %}" class="img-fluid" alt="Compass">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 my-5">
+                <div class="imagem-com-overlay">
+                    <div class="container-image">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalImagem4">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular.jpg' %}" alt="Onix">
+                        <div class="overlay">
+                            <span class="text-overlay" data-bs-toggle="tooltip" data-bs-placement="top" title="Chevrolet Onix">Onix</span>
+                        </div>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImagem4" tabindex="-1" aria-labelledby="modalImagem4Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalImagem4Label">Frota Rosa Trip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{% static 'RosaTrip/assets/image/popular.jpg' %}" class="img-fluid" alt="Onix">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 my-5">
+                <div class="imagem-com-overlay">
+                    <div class="container-image">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalImagem5">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/popular-one.jpg' %}" alt="Fox">
+                        <div class="overlay">
+                            <span class="text-overlay" data-bs-toggle="tooltip" data-bs-placement="top" title="Volkswagen Fox">Fox</span>
+                        </div>
+                    </button>
+                    </div>                        
+                </div>
+            </div>
+            <div class="modal fade" id="modalImagem5" tabindex="-1" aria-labelledby="modalImagem5Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalImagem5Label">Frota Rosa Trip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{% static 'RosaTrip/assets/image/popular-one.jpg' %}" class="img-fluid" alt="Fox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 my-5">
+                <div class="imagem-com-overlay">
+                    <div class="container-image">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalImagem6">
+                        <img class="img-fluid" src="{% static 'RosaTrip/assets/image/mercedez.jpg' %}" alt="Mercedez">
+                        <div class="overlay">
+                            <span class="text-overlay" data-bs-toggle="tooltip" data-bs-placement="top" title="Mercedez">Mercedez AMG</span>
+                        </div>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImagem6" tabindex="-1" aria-labelledby="modalImagem6Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalImagem6Label">Frota Rosa Trip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{% static 'RosaTrip/assets/image/mercedez.jpg' %}" class="img-fluid" alt="Mercedez">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-dark my-5"></section>
+<section id="contact">
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-sm-8 text-center mx-auto">
+                <h2 class="section-heading">NOS CONTATE</h2>
+                <hr class="my-4">
+                <p class="mb-5">Abaixo nossos contatos. Estamos prontos para atendê-lo.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center ms-auto phone-number">
+                <a href="https://wa.me/5548555152686" target="_blank"><img rel="stylesheet" src="{% static 'RosaTrip/assets/image/icon-whatsapp.png' %}" alt="Whatsapp Icon" style="width: 50px;"></a>
+                <p>+55 48 555152686</p>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3518.4957009041245!2d-48.64524952359616!3d-28.131394175942138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzUzLjAiUyA0OMKwMzgnMzMuNiJX!5e0!3m2!1spt-BR!2sbr!4v1717449807498!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</section>
+<hr>
+<div class="container-fluid" id="footer">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+        <div class="col mb-3">
+            <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"></a>
+            <h4>
+                Somos uma empresa referência na região, pois oferecemos a melhor experiência em locação de
+                carros, com veículos de extrema qualidade, conforto e segurança.
+            </h4>
+        </div>
+        <div class="col mb-3">
+        </div>
+        <div class="col mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-link"><a href="#">Retornar à Loja</a></li>
+                <li class="nav-link"><a href="#">Sobre</a></li>
+                <li class="nav-link"><a href="#">Contato</a></li>
+                <li class="nav-link"><a href="#">Suporte</a></li>
+            </ul>
+        </div>
+        <div class="col mb-3 text-center justify-content-center">
+            <h5>Redes Sociais</h5>
+            <ul class="social-icons">
+                <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fab fa-facebook"></i></a></li>
+                <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li class="d-inline"><a class="instagram" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<div class="container-fluid bg-dark text-center">
+    &copy 2024 Copyright: <a href="#">Lucas Dickmann Web Developer</a>
+</div>
+<script src="{% static 'RosaTrip/assets/js/bootstrap.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/jsParaApp.js' %}"></script>
 </body>
 </html>

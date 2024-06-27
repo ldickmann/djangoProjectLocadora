@@ -2,42 +2,11 @@
 /* ---- Developer: Lucas Dickmann ---- */
 /*----------------------------------------------------*/
 
-
 /* ---- Navbar ---- */
 .scrolled {
   background-color: #f0f0f0 !important;
   color: #333 !important;
   transition: background-color 0.3s ease;
-}
-
-/* ---- Media Queries ---- */
-@media (min-width: 992px) {
-    #mainNav .navbar-brand {
-        color: #000000; !important;
-    }
-    #mainNav.navbar-shrink .navbar-brand {
-        color: #000000; !important;
-    }
-}
-@media (max-width: 768px) {
-    #mainNav .navbar-nav {
-    }
-    .navbar-toggler {
-        display: block; !important;
-    }
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-}
-@media (max-width: 420px) {
-    #mainNav .navbar-nav {
-    }
-    .navbar-toggler {
-        display: block; !important;
-    }
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
 }
 
 /* ---- Header ---- */
@@ -56,16 +25,10 @@
     font-size: 3em;
     font-weight: bold;
     text-shadow: 2px 2px 4px black;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 /* Media Queries (Breakpoints) */
-@media (max-width: 1200px) {
-    .header-text {
-        font-size: 2.5em;
-        margin-top: 20px;
-    }
-}
 @media (max-width: 992px) {
     .custom-header {
         height: 90vh;
@@ -75,7 +38,7 @@
     }
     .header-text {
         font-size: 2em;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 @media (max-width: 768px) {
@@ -87,23 +50,15 @@
     }
     .header-text {
         font-size: 1.5em;
-        margin-top: 0;
-    }
-}
-@media (max-width: 576px) {
-    .custom-header {
-        height: 70vh;
-    }
-    .custom-header .container {
-        padding-top: 150px;
-    }
-    .header-text {
-        font-size: 1.2em;
-        margin-top: 0;
+        margin-top: auto;
     }
 }
 
-/* ---- Colors ---- */
+/* ---- About ---- */
+#about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .bg-primary {
     background-color: #11351a !important;
 }
@@ -111,50 +66,7 @@
     color: #ffffff; !important;
 }
 
-/* ---- Frota ---- */
-.container-fluid .row.g-0.popup-gallery {
-    margin-top: -20px;
-}
-.p-0 {
-  padding: 0 !important;
-  background-color: #11351a !important;
-}
-#contact .col-lg-8.text-center.mx-auto {
-    color: #000000; !important;
-}
-
-/* ---- Styles for the floating button ---- */
-.float {
-    display: inline-block;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    bottom: 50px;
-    right: 40px;
-    text-align: center;
-    box-shadow: 2px 2px 3px #999;
-    font-size: 40px;
-}
-
-/* ---- Styles for the phone number ---- */
-
-.phone-number {
-    position: relative;
-    color: #000000;
-}
-
-/* ---- Styles for the no-inline-styles class ---- */
-
-.no-inline-styles {
-    width: 40px !important;
-    height: 40px !important;
-}
-
-/* ---- Styles for the map ---- */
-
+/* ---- Styles do mapa Google ---- */
 .mapa {
     display: block;
     margin: auto;
@@ -162,8 +74,11 @@
     height: 400px;
 }
 
-/*---- Styles for the service box ----*/
-
+/*---- Styles do container de ícones de serviços ---- */
+#servicos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .service-box svg {
     width: 50px;
     height: 50px;
@@ -171,7 +86,7 @@
     margin-bottom: 20px;
 }
 
-/* ---- Styles for the baseboard ---- */
+/* ---- Styles do rodapé ---- */
 footer {
     background-color: #11351a;
     color: #ffffff;
@@ -182,6 +97,47 @@ footer .nav-link a {
 }
 footer .nav-link {
     color: #000000; !important;
+}
+
+/* ---- Styles das imagens em sobreposição ---- */
+#frota {
+    background-color: #11351a; !important;
+    padding-bottom: 60px;
+}
+.imagem-com-overlay {
+    position: relative;
+}
+.container-image {
+    margin-top: -60px;
+}
+.imagem-com-overlay img {
+    z-index: 1;
+    border-radius: 7px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem-com-overlay:hover .overlay {
+    opacity: 1;
+}
+.text-overlay {
+    color: white;
+    font-size: 1.5rem;
+}
+.btn-link {
+    text-decoration: none;
+    border: none;
+    padding: 0;
 }
 
 /** ------Style ícones de redes sociais ------ */
