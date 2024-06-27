@@ -4,8 +4,10 @@
 
 
 /* ---- Navbar ---- */
-#mainNav .navbar-brand {
-    color: #000000; !important;
+.scrolled {
+  background-color: #f0f0f0 !important;
+  color: #333 !important;
+  transition: background-color 0.3s ease;
 }
 
 /* ---- Media Queries ---- */
@@ -56,20 +58,6 @@
     text-shadow: 2px 2px 4px black;
     margin-top: 30px;
 }
-.saiba-mais {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.4;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    border-radius: 300px;
-    transition: all .15s ease-in-out;
-    background-color: var(--bs-primary);
-}
 
 /* Media Queries (Breakpoints) */
 @media (max-width: 1200px) {
@@ -115,21 +103,6 @@
     }
 }
 
-/* Estilos para a seção "About" */
-#about {
-    background-color: var(--bs-btn-border-color);
-}
-#about .text-white {
-    color: white;
-}
-#about .mb-4 {
-    margin-bottom: 1.5rem;
-}
-#about .section-heading {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 /* ---- Colors ---- */
 .bg-primary {
     background-color: #11351a !important;
@@ -141,7 +114,6 @@
 /* ---- Frota ---- */
 .container-fluid .row.g-0.popup-gallery {
     margin-top: -20px;
-
 }
 .p-0 {
   padding: 0 !important;
@@ -205,10 +177,37 @@ footer {
     color: #ffffff;
     padding: 50px 0;
 }
-
 footer .nav-link a {
     color: #000000; !important;
 }
 footer .nav-link {
     color: #000000; !important;
+}
+
+/** ------Style ícones de redes sociais ------ */
+.social-icons a {
+    color: #ffffff;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+.social-icons a:hover {
+    opacity: 0.8;
+}
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+.social-icons a.twitter {
+    background-color: #55acee;
+}
+.social-icons a.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-size: 300% 300%;
+    animation: gradient 3s linear infinite;
 }
