@@ -6,14 +6,6 @@
     <title>LOGIN - ROSA TRIP LOCADORA</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-grid.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-grid.rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-reboot.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-reboot.rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.rtl.css' %}">
     <link rel="stylesheet" fontawesome="all" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-login.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
@@ -21,7 +13,7 @@
 <div class="container-sm">
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
         <div class="container-sm">
-            <a class="navbar-brand" href="#"><h4>Rosa Trip LOCADORA</h4>
+            <a class="navbar-brand" href="#"><h4>LOGIN - ROSA TRIP LOCADORA</h4>
             </a>
             <button class="navbar-toggler icone-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +21,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link" aria-current="page" href="/index/">HOME</a>
                     </li>
                 </ul>
             </div>
@@ -41,13 +33,14 @@
     <div class="container-sm">
         <div class="row row-flex">
             <div class="info-box text-center">
-                <h1>ROSA TRIP<br>LOCADORA</h1>
-                <h5>Não tem cadastro?</h5>
+                <h2>ROSA TRIP<br>LOCADORA</h2>
+                <h6>Não tem cadastro?</h6>
                 <form action="{% url 'cadastro' %}" method="GET">
                     <button class="btn btn-light mt-1" type="submit">Cadastrar</button>
                 </form>
-                <div class="social-media mt-4">
-                    <h6>Acesse nossas redes sociais</h6>
+                <br>
+                <h6>Acesse nossas redes sociais</h6>
+                <div class="social-media">
                     <ul class="social-icons">
                         <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fab fa-facebook"></i></a></li>
                         <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>

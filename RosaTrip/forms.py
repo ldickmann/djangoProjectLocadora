@@ -12,20 +12,20 @@ class VeiculoForm(forms.ModelForm):
 # Classe de formulário de login
 class LoginForm(forms.Form):
     username = forms.CharField(
-        label='Nome de Usuário',
+        label='',
         widget=forms.TextInput(
             attrs={
                 "placeholder": "Nome de Usuário",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
 
     password = forms.CharField(
-        label='Senha',
+        label='',
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Password",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
 
@@ -33,51 +33,51 @@ class LoginForm(forms.Form):
 # Classe de formulário de cadastro
 class CadastroForm(forms.Form):
     username = forms.CharField(
-        label='Nome de Usuário',
+        label='',
         widget=forms.TextInput(
             attrs={
                 "placeholder": "Nome de Usuário",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
     first_name = forms.CharField(
-        label='Nome',
+        label='',
         widget=forms.TextInput(
             attrs={
                 "placeholder": "Nome",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
     last_name = forms.CharField(
-        label='Sobrenome',
+        label='',
         widget=forms.TextInput(
             attrs={
                 "placeholder": "Sobrenome",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
     email = forms.EmailField(
-        label='Email',
+        label='',
         widget=forms.EmailInput(
             attrs={
                 "placeholder": "Email",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
     password1 = forms.CharField(
-        label='Senha',
+        label='',
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Senha",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
     password2 = forms.CharField(
-        label='Confirmação de Senha',
+        label='',
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Confirme sua Senha",
-                "class": "form-control"
+                "class": "form-control form-input"
             }
         ))
 

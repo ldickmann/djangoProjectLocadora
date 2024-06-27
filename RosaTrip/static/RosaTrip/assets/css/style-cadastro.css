@@ -14,19 +14,39 @@
     align-items: center;
     justify-content: center;
 }
+
 /* ---- Style do container ---- */
 .row {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
-    width: 70%;
-    right: 0;
-    left: 0;
-    margin: auto;
     height: 400px;
+    z-index: 1;
     background-color: rgb(17, 53, 26);
+    border-radius: 20px;
 }
+.verdeR {
+    color: white;
+}
+
+/* ------ Style do box de informações ------ */
+.info-box {
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 20%;
+}
+@media (max-width: 768px) {
+    .info-box {
+        background-color: black;
+        width: 50%;
+        top: 120%;
+        left: 27%;
+        border-radius: 20px;
+        h1 {
+            margin-top: 50px;
+        }
+    }
+}
+
 /* ---- Style do formulário de cadastro ---- */
 .col-md-12.cadastro {
     background-color: #f8f9fa;
@@ -34,7 +54,7 @@
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
-    width: 30%;
+    width: 20%;
     right: calc(60% - 50px);
     z-index: 0;
     box-shadow: 0 0 20px 7px #000000;
@@ -43,7 +63,64 @@
     display: flex;
     flex-direction: column;
 }
+
+/* ------ Style do navbar ------ */
+.navbar-custom {
+    background: linear-gradient(45deg, #000000, #031a0a, #11351a);
+}
+.navbar-brand {
+    color: white;
+}
+.nav-link {
+    color: white;
+}
+
 /* ------ Style do botão de cadastro ------ */
 .btn.btn-success {
     margin-top: 80px;
+}
+
+/* ------ Style formulário de cadastro ------ */
+.form-input {
+    margin-bottom: 20px;
+}
+
+/* ------Style ícones de redes sociais ------ */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+.social-icons a {
+    color: #ffffff;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+.social-icons a:hover {
+    opacity: 0.8;
+}
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+.social-icons a.twitter {
+    background-color: #55acee;
+}
+.social-icons a.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-size: 300% 300%;
+    animation: gradient 3s linear infinite;
+}
+@media (max-width: 768px) {
+    .social-icons {
+        left: 50%;
+        transform: translateX(-5%);
+    }
 }
