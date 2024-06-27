@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>LOGIN - ROSA TRIP LOCADORA</title>
-
     {% load static %}
-
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.rtl.css' %}">
@@ -17,11 +14,9 @@
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-reboot.rtl.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.rtl.css' %}">
-
     <link rel="stylesheet" fontawesome="all" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style-login.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom" id="mainNav">
     <div class="container">
@@ -30,7 +25,6 @@
             <i class="fa fa-align-justify"></i>
         </button>
     </div>
-
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -40,9 +34,9 @@
     </div>
 </nav>
 
-<div class="container-sm">
-    <div class="row">
-            <div class="col-12">
+<header class="custom-header" style="background-image: url({% static 'RosaTrip/assets/image/bmw-blue.jpg' %}); height: 100vh; position: relative;">
+    <div class="container-sm">
+        <div class="row row-flex">
             <div class="info-box text-center">
                 <h1>ROSA TRIP<br>LOCADORA</h1>
                 <h5>Não tem cadastro?</h5>
@@ -59,38 +53,28 @@
                 </div>
             </div>
         </div>
-
-        <!-- formulário de login -->
-        <div class="col-12 col-md-6">
-            <br>
-            <h2>LOGIN</h2>
-            <br>
-            {% if messages %}
-                <ul class="messages">
-                    {% for message in messages %}
-                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            <form action="{% url 'login' %}" method="POST">
-                {% csrf_token %}
-                {{ form }}
-                <button class="btn btn-dark mt-3" type="submit">Logar</button><br>
-                <a class="e-senha" href="">Esqueceu sua senha?</a>
-            </form>
-        </div>
     </div>
-</div>
-
-<script src="{% static 'RosaTrip/assets/js/bootstrap.min.js' %}"></script>
+    <!-- formulário de login -->
+    <div class="col-12 col-md-6 text-center">
+        <br>
+        <h2>LOGIN</h2>
+        <br>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button class="btn btn-dark mt-3" type="submit">Logar</button><br>
+            <a class="e-senha" href="">Esqueceu sua senha?</a>
+        </form>
+    </div>
+</header>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.js' %}"></script>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.js' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.min.js.map' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/bootstrap.min.js.map' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/bootstrap.js.map' %}"></script>
-<script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.js.map' %}"></script>
-
-
 </body>
 </html>

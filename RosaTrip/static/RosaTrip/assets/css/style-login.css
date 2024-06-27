@@ -2,22 +2,36 @@
 /* ---- Developer: Lucas Dickmann ---- */
 /*----------------------------------------------------*/
 
-/* ---- Style do body ---- */
-body {
-    padding-top: 50px;
+/* ---- Style do cabeçalho ---- */
+.custom-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
 }
-/* ---- Style do container ---- */
+
+/* ---- Style do container central ---- */
 .row {
-    transform: translateY(-50%);
     text-align: center;
     height: 400px;
+    z-index: 1;
     background-color: rgb(17, 53, 26);
+    border-radius: 20px;
 }
+
+/** ------ Style do box de informações ------ */
+.info-box {
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 20%;
+}
+
 /* ---- Style do formulário de cadastro ---- */
 .col-12.col-md-6 {
     background-color: #f8f9fa;
@@ -26,13 +40,14 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 30%;
+    width: 20%;
     right: calc(60% - 50px);
     z-index: 1000;
     box-shadow: 0 0 20px 7px #000000;
     border-radius: 20px;
     padding: 30px;
 }
+
 /** ------ Style mensagens de erro ------ */
 .messages{
     list-style: none;
@@ -45,14 +60,7 @@ body {
     border-radius: 5px;
     width: 90%;
 }
-/** ------ Style do box de informações ------ */
-.info-box{
-    color: black;
-    top: 17%;
-    right: 10%;
-    position: absolute;
-    text-align: center;
-}
+
 /** ------Style ícones de redes sociais ------ */
 .social-media {
     display: flex;
