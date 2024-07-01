@@ -1,10 +1,12 @@
+/* ------ Style do navbar ------ */
 .navbar-custom {
-  background-color: #11351a !important;
+    background: linear-gradient(45deg, #000000, #031a0a, #11351a);
 }
-
-.navbar-custom .navbar-brand,
-.nav-link .nav-link {
-  color: #ffffff !important;
+.navbar-brand {
+    color: white;
+}
+.nav-link {
+    color: white;
 }
 
 .btn-primary {

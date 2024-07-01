@@ -15,6 +15,18 @@ def index(request):
     return render(request, 'index.html')
 
 
+def economicos(request):
+    return render(request, 'economicos.html')
+
+
+def suvs(request):
+    return render(request, 'suvs.html')
+
+
+def utilitarios(request):
+    return render(request, 'utilitarios.html')
+
+
 # A view login é responsável por autenticar o usuário.
 def login(request):
     if request.method == 'POST':

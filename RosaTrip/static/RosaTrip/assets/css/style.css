@@ -1,15 +1,15 @@
 /*----------------------------------------------------*/
-/* ---- Developer: Lucas Dickmann ---- */
+/* ---- Web Developer: Lucas E. Dickmann ---- */
 /*----------------------------------------------------*/
 
-/* ---- Navbar ---- */
+/* ---- Styles Navbar ---- */
 .scrolled {
   background-color: #f0f0f0 !important;
   color: #333 !important;
   transition: background-color 0.3s ease;
 }
 
-/* ---- Header ---- */
+/* ---- Styles Header ---- */
 .custom-header {
     background-size: cover;
     background-repeat: repeat-x;
@@ -28,7 +28,7 @@
     margin-top: 100px;
 }
 
-/* Media Queries (Breakpoints) */
+/* ---- Styles responsividade ---- */
 @media (max-width: 992px) {
     .custom-header {
         height: 90vh;
@@ -54,7 +54,7 @@
     }
 }
 
-/* ---- About ---- */
+/* ---- Styles seção  ---- */
 #about {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -74,7 +74,7 @@
     height: 400px;
 }
 
-/*---- Styles do container de ícones de serviços ---- */
+/* ---- Styles do container de ícones de serviços ---- */
 #servicos {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -84,19 +84,6 @@
     height: 50px;
     fill: #11351a;
     margin-bottom: 20px;
-}
-
-/* ---- Styles do rodapé ---- */
-footer {
-    background-color: #11351a;
-    color: #ffffff;
-    padding: 50px 0;
-}
-footer .nav-link a {
-    color: #000000; !important;
-}
-footer .nav-link {
-    color: #000000; !important;
 }
 
 /* ---- Styles das imagens em sobreposição ---- */
@@ -140,30 +127,22 @@ footer .nav-link {
     padding: 0;
 }
 
-/** ------Style ícones de redes sociais ------ */
-.social-icons a {
+/* ---- Styles Rodapé ---- */
+#footer {
+    background-color: #11351a;
     color: #ffffff;
-    font-size: 16px;
-    display: inline-block;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 8px;
-    border-radius: 100%;
-    transition: all 0.3s ease;
+    border-top: 1px solid #ffffff;
 }
-.social-icons a:hover {
-    opacity: 0.8;
+
+#footer .nav-link {
+    color: #000000;
 }
-.social-icons a.facebook {
-    background-color: #3b5998;
+
+/* ---- Styles dos links no rodapé ---- */
+#footer a {
+    text-decoration: none;
+    color: white;
 }
-.social-icons a.twitter {
-    background-color: #55acee;
-}
-.social-icons a.instagram {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    background-size: 300% 300%;
-    animation: gradient 3s linear infinite;
+#footer a:hover {
+    color: #0d6efd;
 }

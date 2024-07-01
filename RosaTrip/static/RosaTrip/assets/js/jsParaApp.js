@@ -8,8 +8,28 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Tooltip para imagens
+// Adiciona efeito ao passar o mouse, apresenta um texto.
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 });
+
+
+// Abre e fecha o menu mobile
+document.addEventListener('click', () => {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('#navbarNav');
+
+  navbarToggler.addEventListener('click', () => {
+    setTimeout(() => {
+      if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');
+        navbarCollapse.style.display = 'none';
+      } else {
+        navbarCollapse.classList.add('show');
+        navbarCollapse.style.display = 'block';
+      }
+    }, 10);
+  });
+});
+

@@ -27,7 +27,7 @@
     color: white;
 }
 
-/* ------ Style do box de informações ------ */
+/* ---- Style do box de informações ---- */
 .info-box {
     color: white;
     position: relative;
@@ -38,11 +38,11 @@
     .info-box {
         background-color: black;
         width: 50%;
-        top: 120%;
+        top: 130%;
         left: 27%;
         border-radius: 20px;
-        h1 {
-            margin-top: 50px;
+        h2 {
+            margin-top: 100px;
         }
     }
 }
@@ -63,8 +63,20 @@
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 768px) {
+    .col-md-12.cadastro {
+        width: 80%;
+        right: 10%;
+    }
+}
+@media (max-width: 425px) {
+    .col-md-12.cadastro {
+        width: 90%;
+        right: 5%;
+    }
+}
 
-/* ------ Style do navbar ------ */
+/* ---- Style do navbar ---- */
 .navbar-custom {
     background: linear-gradient(45deg, #000000, #031a0a, #11351a);
 }
@@ -75,52 +87,20 @@
     color: white;
 }
 
-/* ------ Style do botão de cadastro ------ */
+/* ---- Style do botão de cadastro ---- */
 .btn.btn-success {
     margin-top: 80px;
 }
 
-/* ------ Style formulário de cadastro ------ */
+/* ---- Styles formulário de cadastro ---- */
 .form-input {
     margin-bottom: 20px;
 }
 
-/* ------Style ícones de redes sociais ------ */
+/* ---- Style ícones dAS redes sociais ---- */
 .social-media {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: auto;
-}
-.social-icons a {
-    color: #ffffff;
-    font-size: 16px;
-    display: inline-block;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 8px;
-    border-radius: 100%;
-    transition: all 0.3s ease;
-}
-.social-icons a:hover {
-    opacity: 0.8;
-}
-.social-icons a.facebook {
-    background-color: #3b5998;
-}
-.social-icons a.twitter {
-    background-color: #55acee;
-}
-.social-icons a.instagram {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    background-size: 300% 300%;
-    animation: gradient 3s linear infinite;
-}
-@media (max-width: 768px) {
-    .social-icons {
-        left: 50%;
-        transform: translateX(-5%);
-    }
 }

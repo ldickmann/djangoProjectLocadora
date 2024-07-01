@@ -5,39 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
+
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-grid.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-reboot.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-grid.rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-reboot.rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-utilities.rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.rtl.css' %}">
+
     <link rel="stylesheet" fontawesome="all" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/style.css' %}">
 </head>
 <body>
 <div class="container-sm">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container-sm">
-            <a class="navbar-brand" href="#"><h3>Rosa Trip LOCADORA</h3>
+            <a class="navbar-brand" href="/"><h3>Rosa Trip LOCADORA</h3>
             </a>
-            <button class="navbar-toggler icone-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link" aria-current="page" href="/">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">VEÍCULOS</a>
+                        <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">FROTA</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">ECONÔMICOS</a>
-                            <a class="dropdown-item" href="#">SUVc'S</a>
-                            <a class="dropdown-item" href="#">UTILITÁRIOS</a>
+                            <a class="dropdown-item" href="/economicos/">ECONÔMICOS</a>
+                            <a class="dropdown-item" href="/suvs/">SUV's</a>
+                            <a class="dropdown-item" href="/utilitarios/">UTILITÁRIOS</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -95,7 +89,7 @@
     <div class="container-sm">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2 class="section">Seu destino, nossa expertise</h2>
+                <h2 class="section">Seu destino, nossa competência</h2>
                 <hr class="my-4">
             </div>
         </div>
@@ -127,7 +121,7 @@
                         <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"></path>
                     </svg>
                     <h3 class="mb-3">Nossa prioridade é a sua experiência</h3>
-                    <p class="text-muted mb-0">Na Rosa Trip Locadora você é mais que cliente, é familia!</p>
+                    <p class="text-muted mb-0">Na Rosa Trip Locadora você é mais que cliente, é família!</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 text-center">
@@ -292,59 +286,135 @@
         </div>
     </div>
 </section>
-<section class="bg-dark my-5"></section>
-<section id="contact">
-    <div class="container-sm">
-        <div class="row">
-            <div class="col-sm-8 text-center mx-auto">
-                <h2 class="section-heading">NOS CONTATE</h2>
-                <hr class="my-4">
-                <p class="mb-5">Abaixo nossos contatos. Estamos prontos para atendê-lo.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center ms-auto phone-number">
-                <a href="https://wa.me/5548555152686" target="_blank"><img rel="stylesheet" src="{% static 'RosaTrip/assets/image/icon-whatsapp.png' %}" alt="Whatsapp Icon" style="width: 50px;"></a>
-                <p>+55 48 555152686</p>
-            </div>
-        </div>
-        <div class="col-sm-12">
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3518.4957009041245!2d-48.64524952359616!3d-28.131394175942138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzUzLjAiUyA0OMKwMzgnMzMuNiJX!5e0!3m2!1spt-BR!2sbr!4v1717449807498!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+<div class="container-sm">
+    <div class="row">
+        <div class="col-sm-12 text-center mx-auto">
+            <h2 class="contato">NOS CONTATE</h2>
         </div>
     </div>
-</section>
+    <div class="container-sm text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 199 199" fill="none">
+                    <a href="https://wa.me/5548992163061" target="_blank">
+                        <path d="M99.8074 0.78894H99.3576C44.941 0.78894 0.827637 44.9153 0.827637 99.3479V99.7978C0.827637 154.23 44.941 198.357 99.3576 198.357H99.8074C154.224 198.357 198.337 154.23 198.337 99.7978V99.3479C198.337 44.9153 154.224 0.78894 99.8074 0.78894Z" fill="#25D366"></path>
+                        <path d="M118.83 128.468C93.5519 128.468 72.9865 107.889 72.9796 82.6042C72.9865 76.1947 78.204 70.9826 84.5978 70.9826C85.2552 70.9826 85.9056 71.038 86.5284 71.1487C87.8985 71.3771 89.1994 71.8409 90.3965 72.54C90.5695 72.6438 90.6871 72.8099 90.7148 73.0038L93.3858 89.8444C93.4204 90.0451 93.3582 90.2389 93.2267 90.3843C91.7528 92.0178 89.8706 93.1945 87.7739 93.7829L86.7637 94.0667L87.1442 95.0426C90.5902 103.819 97.6069 110.831 106.388 114.292L107.364 114.68L107.647 113.669C108.236 111.572 109.412 109.689 111.045 108.215C111.163 108.104 111.322 108.049 111.481 108.049C111.516 108.049 111.55 108.049 111.592 108.056L128.427 110.727C128.628 110.762 128.794 110.873 128.898 111.046C129.59 112.243 130.053 113.551 130.289 114.922C130.399 115.531 130.448 116.175 130.448 116.846C130.448 123.249 125.237 128.461 118.83 128.468Z" fill="#FDFDFD"></path>
+                        <path d="M163.656 94.0251C162.292 78.6173 155.234 64.3238 143.782 53.782C132.261 43.1778 117.314 37.3359 101.683 37.3359C67.3746 37.3359 39.4605 65.2583 39.4605 99.5764C39.4605 111.094 42.6366 122.314 48.6498 132.088L35.2394 161.782L78.1763 157.207C85.6427 160.266 93.545 161.817 101.676 161.817C103.814 161.817 106.007 161.706 108.208 161.478C110.145 161.27 112.104 160.965 114.027 160.578C142.758 154.77 163.732 129.264 163.898 99.9086V99.5764C163.898 97.7075 163.815 95.8386 163.649 94.0251H163.656ZM79.8301 144.173L56.0747 146.707L63.1675 130.987L61.7489 129.084C61.6451 128.945 61.5413 128.807 61.4237 128.648C55.2651 120.141 52.0128 110.091 52.0128 99.5833C52.0128 72.1869 74.2943 49.8989 101.683 49.8989C127.341 49.8989 149.09 69.9235 151.186 95.4856C151.297 96.8561 151.359 98.2335 151.359 99.5902C151.359 99.9778 151.352 100.359 151.345 100.767C150.82 123.685 134.814 143.149 112.422 148.105C110.713 148.486 108.962 148.776 107.218 148.963C105.405 149.171 103.544 149.275 101.696 149.275C95.1158 149.275 88.722 148.001 82.681 145.481C82.0098 145.212 81.3524 144.921 80.7366 144.623L79.8371 144.187L79.8301 144.173Z" fill="#FDFDFD"></path>
+                    </a>
+                </svg>
+                <p>Contate no WhatsApp!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3518.4957009041245!2d-48.64524952359616!3d-28.131394175942138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzUzLjAiUyA0OMKwMzgnMzMuNiJX!5e0!3m2!1spt-BR!2sbr!4v1717449807498!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="my-4">
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="section">Somos uma empresa referência na região, pois oferecemos a melhor experiência em locação de
+                carros, com veículos de extrema qualidade, conforto e segurança.</h4>
+        </div>
+    </div>
+</div>
 <hr>
 <div class="container-fluid" id="footer">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-6 py-5">
+        <div class="col mb-3"></div>
         <div class="col mb-3">
-            <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"></a>
-            <h4>
-                Somos uma empresa referência na região, pois oferecemos a melhor experiência em locação de
-                carros, com veículos de extrema qualidade, conforto e segurança.
-            </h4>
+            <h4><a href="/">Rosa Trip Locadora de Veículos</a></h4>
         </div>
+        <div class="col mb-3"></div>
         <div class="col mb-3">
+            <div class="col d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M12.1658 8.93977C11.6418 10.0015 10.9325 11.0601 10.2058 12.01C9.48132 12.957 8.75442 13.7768 8.20768 14.3605C8.13503 14.438 8.06566 14.5113 8 14.5801C7.93434 14.5113 7.86497 14.438 7.79232 14.3605C7.24558 13.7768 6.51868 12.957 5.79425 12.01C5.06754 11.0601 4.35825 10.0015 3.83423 8.93977C3.3048 7.86708 3 6.86191 3 6C3 3.23858 5.23858 1 8 1C10.7614 1 13 3.23858 13 6C13 6.86191 12.6952 7.86708 12.1658 8.93977ZM8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16Z" fill="white"></path>
+                    <path d="M8 8C6.89543 8 6 7.10457 6 6C6 4.89543 6.89543 4 8 4C9.10457 4 10 4.89543 10 6C10 7.10457 9.10457 8 8 8ZM8 9C9.65685 9 11 7.65685 11 6C11 4.34315 9.65685 3 8 3C6.34315 3 5 4.34315 5 6C5 7.65685 6.34315 9 8 9Z" fill="white"></path>
+                </svg>
+                <p class="col-4 m-3 align-items-center">Praia do Rosa Ibiraquera Imbituba/SC</p>
+            </div>
+            <div class="col d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.65387 1.32849C3.40343 1.00649 2.92745 0.976861 2.639 1.26531L1.60508 2.29923C1.1216 2.78271 0.94387 3.46766 1.1551 4.06847C2.00338 6.48124 3.39215 8.74671 5.32272 10.6773C7.25329 12.6078 9.51876 13.9966 11.9315 14.8449C12.5323 15.0561 13.2173 14.8784 13.7008 14.3949L14.7347 13.361C15.0231 13.0726 14.9935 12.5966 14.6715 12.3461L12.3653 10.5524C12.2008 10.4245 11.9866 10.3793 11.7845 10.4298L9.59541 10.9771C9.00082 11.1257 8.37183 10.9515 7.93845 10.5181L5.48187 8.06155C5.04849 7.62817 4.87427 6.99919 5.02292 6.40459L5.57019 4.21553C5.62073 4.01336 5.57552 3.79918 5.44758 3.63468L3.65387 1.32849ZM1.88477 0.511076C2.62689 -0.231039 3.8515 -0.154797 4.49583 0.673634L6.28954 2.97983C6.6187 3.40304 6.73502 3.95409 6.60498 4.47423L6.05772 6.66329C5.99994 6.8944 6.06766 7.13888 6.2361 7.30732L8.69268 9.7639C8.86113 9.93235 9.1056 10.0001 9.33671 9.94229L11.5258 9.39502C12.0459 9.26498 12.597 9.3813 13.0202 9.71047L15.3264 11.5042C16.1548 12.1485 16.231 13.3731 15.4889 14.1152L14.455 15.1492C13.7153 15.8889 12.6089 16.2137 11.5778 15.8512C9.01754 14.9511 6.61438 13.4774 4.56849 11.4315C2.5226 9.38562 1.04895 6.98246 0.148838 4.42225C-0.213682 3.39112 0.11113 2.28472 0.85085 1.545L1.88477 0.511076Z" fill="white"></path>
+                </svg>
+                <p class="m-3">+55 48 99216 3061</p>
+            </div>
+            <div class="col d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                    <path opacity="0.4" d="M16.2678 6.56104L12.0024 9.99531C11.1952 10.6282 10.0636 10.6282 9.25641 9.99531L4.95435 6.56104" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88787 1H15.3158C16.6752 1.01525 17.969 1.58993 18.896 2.5902C19.823 3.59048 20.3022 4.92903 20.222 6.29412V12.822C20.3022 14.1871 19.823 15.5256 18.896 16.5259C17.969 17.5262 16.6752 18.1009 15.3158 18.1161H5.88787C2.96796 18.1161 1 15.7407 1 12.822V6.29412C1 3.37545 2.96796 1 5.88787 1Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <p class="m-3">contatorosatrip@rosatrip.com.br</p>
+            </div>
+        </div>
+        <div class="col mx-auto ms-5 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 38 38" fill="none">
+                <a href="https://facebook.com" target="_blank">
+                    <path d="M38 19.0001C38 8.50669 29.4934 0.000102997 19 0.000102997C8.50658 0.000102997 0 8.50669 0 19.0001C0 28.4836 6.94803 36.3439 16.0312 37.7693V24.4923H11.207V19.0001H16.0312V14.8142C16.0312 10.0523 18.8678 7.42198 23.2078 7.42198C25.2866 7.42198 27.4609 7.79307 27.4609 7.79307V12.4689H25.0651C22.7048 12.4689 21.9688 13.9334 21.9688 15.436V19.0001H27.2383L26.3959 24.4923H21.9688V37.7693C31.052 36.3439 38 28.4836 38 19.0001Z" fill="#1877F2"></path>
+                    <path d="M26.3959 24.4922L27.2383 19H21.9688V15.4359C21.9688 13.9333 22.7048 12.4688 25.0651 12.4688H27.4609V7.79297C27.4609 7.79297 25.2866 7.42188 23.2078 7.42188C18.8678 7.42188 16.0313 10.0522 16.0313 14.8141V19H11.207V24.4922H16.0313V37.7692C16.9986 37.921 17.99 38 19 38C20.01 38 21.0014 37.921 21.9688 37.7692V24.4922H26.3959Z" fill="white"></path>
+                </a>
+            </svg>
+            <div class="m-2"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <a href="https://instagram.com" target="_blank">
+                    <path d="M6.08577 23.9151C4.65848 23.8502 3.88314 23.6127 3.36743 23.4115C2.6841 23.1455 2.19693 22.8288 1.68407 22.3166C1.17122 21.8045 0.853806 21.3173 0.589176 20.634C0.388029 20.1183 0.150504 19.3429 0.0855946 17.9157C0.0142658 16.3728 0 15.9099 0 12.0011C0 8.09225 0.0156923 7.63004 0.0848813 6.08577C0.14979 4.65848 0.388742 3.88457 0.588463 3.36743C0.854519 2.6841 1.17193 2.19693 1.68336 1.68336C2.1955 1.17122 2.68268 0.853092 3.36672 0.588463C3.88243 0.387315 4.65777 0.14979 6.08506 0.0848813C7.62861 0.0142658 8.09225 0 11.9996 0C15.9085 0 16.3707 0.0156923 17.9149 0.0848813C19.3422 0.14979 20.1161 0.388742 20.6333 0.588463C21.3166 0.853092 21.8038 1.17122 22.3166 1.68336C22.8295 2.1955 23.1455 2.68339 23.4115 3.36672C23.6127 3.88243 23.8502 4.65777 23.9151 6.08506C23.9857 7.62933 24 8.09154 24 12.0004C24 15.9077 23.9857 16.3714 23.9151 17.9157C23.8502 19.3429 23.6113 20.1183 23.4115 20.634C23.1455 21.3173 22.8288 21.8045 22.3166 22.3166C21.8045 22.8288 21.3166 23.1455 20.6333 23.4115C20.1176 23.6127 19.3422 23.8502 17.9149 23.9151C16.3721 23.9857 15.9085 24 11.9996 24C8.09225 24 7.62862 23.9864 6.08577 23.9151Z" fill="url(#paint0_radial_1_2565)"></path>
+                    <path d="M9.27709 11.915C9.27709 10.4579 10.4579 9.27645 11.915 9.27645C13.3721 9.27645 14.5535 10.4579 14.5535 11.915C14.5535 13.3721 13.3721 14.5535 11.915 14.5535C10.4579 14.5535 9.27709 13.3721 9.27709 11.915ZM7.85074 11.915C7.85074 14.1597 9.67031 15.9793 11.915 15.9793C14.1597 15.9793 15.9793 14.1597 15.9793 11.915C15.9793 9.67031 14.1597 7.85074 11.915 7.85074C9.67031 7.85074 7.85081 9.67018 7.85081 11.915M15.1904 7.68959C15.1903 7.87745 15.246 8.0611 15.3503 8.21734C15.4546 8.37357 15.6029 8.49537 15.7764 8.56733C15.9499 8.63929 16.1409 8.65817 16.3251 8.6216C16.5094 8.58502 16.6787 8.49463 16.8116 8.36185C16.9444 8.22907 17.035 8.05987 17.0717 7.87564C17.1084 7.69141 17.0897 7.50043 17.0179 7.32685C16.946 7.15327 16.8244 7.00488 16.6682 6.90045C16.5121 6.79603 16.3285 6.74025 16.1406 6.74017H16.1402C15.8884 6.74029 15.647 6.84034 15.4689 7.01836C15.2908 7.19637 15.1906 7.43779 15.1904 7.68959ZM8.71734 18.3577C7.94566 18.3225 7.52623 18.194 7.24749 18.0854C6.87796 17.9415 6.61429 17.7702 6.33708 17.4934C6.05986 17.2165 5.88827 16.9531 5.74504 16.5836C5.63638 16.305 5.50784 15.8854 5.47276 15.1137C5.43439 14.2794 5.42673 14.0288 5.42673 11.9151C5.42673 9.80144 5.43502 9.55152 5.47276 8.71652C5.5079 7.94484 5.63739 7.5261 5.74504 7.24667C5.8889 6.87713 6.06024 6.61347 6.33708 6.33625C6.61391 6.05904 6.87732 5.88744 7.24749 5.74421C7.5261 5.63556 7.94566 5.50702 8.71734 5.47194C9.55164 5.43356 9.80227 5.4259 11.915 5.4259C14.0277 5.4259 14.2786 5.43407 15.1136 5.47206C15.8853 5.50721 16.304 5.6367 16.5835 5.74434C16.953 5.88757 17.2167 6.05955 17.4939 6.33638C17.7711 6.61322 17.942 6.87726 18.0859 7.2468C18.1946 7.5254 18.3231 7.94496 18.3582 8.71664C18.3966 9.55164 18.4042 9.80157 18.4042 11.9153C18.4042 14.0289 18.3966 14.2789 18.3582 15.1139C18.323 15.8855 18.1939 16.305 18.0859 16.5837C17.942 16.9532 17.7707 17.2169 17.4939 17.4935C17.217 17.7701 16.953 17.9417 16.5835 18.0855C16.3048 18.1942 15.8853 18.3227 15.1136 18.3578C14.2793 18.3962 14.0287 18.4038 11.915 18.4038C9.80132 18.4038 9.55139 18.3962 8.71734 18.3578M8.6518 4.04793C7.8092 4.08631 7.23344 4.21991 6.73061 4.41557C6.21018 4.61762 5.76903 4.8887 5.32852 5.32852C4.888 5.76834 4.61762 6.20955 4.41557 6.73061C4.21991 7.23375 4.08631 7.8092 4.04793 8.6518C4.00893 9.49573 4 9.76554 4 11.915C4 14.0645 4.00893 14.3343 4.04793 15.1782C4.08631 16.0209 4.21991 16.5962 4.41557 17.0994C4.61762 17.6198 4.88806 18.0619 5.32852 18.5015C5.76897 18.9411 6.20955 19.2118 6.73061 19.4144C7.23439 19.6101 7.8092 19.7437 8.6518 19.7821C9.49618 19.8204 9.76554 19.83 11.915 19.83C14.0645 19.83 14.3343 19.8211 15.1782 19.7821C16.0209 19.7437 16.5962 19.6101 17.0994 19.4144C17.6198 19.2118 18.061 18.9413 18.5015 18.5015C18.942 18.0617 19.2118 17.6198 19.4144 17.0994C19.6101 16.5962 19.7443 16.0208 19.7821 15.1782C19.8204 14.3336 19.8294 14.0645 19.8294 11.915C19.8294 9.76554 19.8204 9.49573 19.7821 8.6518C19.7437 7.80914 19.6101 7.23344 19.4144 6.73061C19.2118 6.21018 18.9413 5.76903 18.5015 5.32852C18.0617 4.888 17.6198 4.61762 17.1 4.41557C16.5962 4.21991 16.0208 4.08567 15.1788 4.04793C14.3348 4.00937 14.0651 4 11.916 4C9.76681 4 9.49649 4.00893 8.65212 4.04793" fill="white"></path>
+                </a>
+                <defs>
+                    <radialGradient id="paint0_radial_1_2565" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.55326 23.4742) scale(30.4711)">
+                        <stop offset="0.09" stop-color="#FA8F21"></stop>
+                        <stop offset="0.78" stop-color="#D82D7E"></stop>
+                    </radialGradient>
+                </defs>
+            </svg>
+            <div class="m-2"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 25 24" fill="none">
+                <a href="https://twitter.com" target="_blank">
+                <rect x="0.5" width="24" height="24" rx="12" fill="#1D9BF0"></rect>
+                <path d="M10.304 18.33C15.626 18.33 18.536 13.92 18.536 10.098C18.536 9.972 18.536 9.846 18.53 9.726C19.094 9.318 19.586 8.808 19.976 8.226C19.46 8.454 18.902 8.61 18.314 8.682C18.914 8.322 19.37 7.758 19.586 7.08C19.028 7.41 18.41 7.65 17.75 7.78199C17.222 7.21799 16.472 6.87 15.638 6.87C14.042 6.87 12.746 8.166 12.746 9.762C12.746 9.99 12.77 10.212 12.824 10.422C10.418 10.302 8.28796 9.15 6.85996 7.398C6.61396 7.824 6.46996 8.322 6.46996 8.85C6.46996 9.852 6.97996 10.74 7.75996 11.256C7.28596 11.244 6.84196 11.112 6.45196 10.896C6.45196 10.908 6.45196 10.92 6.45196 10.932C6.45196 12.336 7.44796 13.5 8.77396 13.77C8.53396 13.836 8.27596 13.872 8.01196 13.872C7.82596 13.872 7.64596 13.854 7.46596 13.818C7.83196 14.97 8.89996 15.804 10.166 15.828C9.17596 16.602 7.92796 17.064 6.57196 17.064C6.33796 17.064 6.10996 17.052 5.88196 17.022C7.14796 17.85 8.67196 18.33 10.304 18.33Z" fill="white"></path>
+                </a>
+            </svg>
+        </div>
+    </footer>
+</div>
+<div class="container-fluid" id="footer">
+    <footer class="row row-cols-2 row-cols-sm-2 row-cols-md-4 py-5">
+        <div class="col mb-3">
+            <ul class="nav flex-column ms-5">
+                <h6>Home</h6>
+            </ul>
         </div>
         <div class="col mb-3">
             <ul class="nav flex-column">
-                <li class="nav-link"><a href="#">Retornar à Loja</a></li>
-                <li class="nav-link"><a href="#">Sobre</a></li>
-                <li class="nav-link"><a href="#">Contato</a></li>
-                <li class="nav-link"><a href="#">Suporte</a></li>
+                <h6>Sobre Nós</h6>
+                <p><a href="#">Missão</a></p>
+                <p><a href="#">Visão</a></p>
             </ul>
         </div>
-        <div class="col mb-3 text-center justify-content-center">
-            <h5>Redes Sociais</h5>
-            <ul class="social-icons">
-                <li class="d-inline"><a class="facebook" href="https://facebook.com.br"><i class="fab fa-facebook"></i></a></li>
-                <li class="d-inline"><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                <li class="d-inline"><a class="instagram" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <div class="col mb-3">
+            <ul class="nav flex-column">
+                <h6>Frota de Veículos</h6>
+                <p><a href="/economicos/">Econômicos</a></p>
+                <p><a href="/suvs/">SUV's</a></p>
+                <p><a href="/utilitarios/">Utilitários</a></p>
+            </ul>
+        </div>
+        <div class="col mb-3">
+            <ul class="nav flex-column">
+                <h6>Contato</h6>
+                <p><a href="#">Formulário para Contato</a></p>
             </ul>
         </div>
     </footer>
 </div>
 <div class="container-fluid bg-dark text-center">
-    &copy 2024 Copyright: <a href="#">Lucas Dickmann Web Developer</a>
+    &copy 2024 Copyright  <a href="https://linkedin.com/in/lucas-dickmann">Lucas Dickmann Web Developer - CodeWithLuks</a>
 </div>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.js' %}"></script>
 <script src="{% static 'RosaTrip/assets/js/bootstrap.bundle.js' %}"></script>

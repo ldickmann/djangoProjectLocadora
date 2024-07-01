@@ -24,7 +24,7 @@ class LoginForm(forms.Form):
         label='',
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Password",
+                "placeholder": "Senha",
                 "class": "form-control form-input"
             }
         ))

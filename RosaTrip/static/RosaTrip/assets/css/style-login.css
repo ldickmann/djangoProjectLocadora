@@ -1,8 +1,8 @@
 /*----------------------------------------------------*/
-/* ---- Developer: Lucas Dickmann ---- */
+/* ---- Web Developer: Lucas E. Dickmann ---- */
 /*----------------------------------------------------*/
 
-/* ---- Style do cabeçalho ---- */
+/* ---- Styles Cabeçalho/Header ---- */
 .custom-header {
     background-size: cover;
     background-position: center;
@@ -14,8 +14,7 @@
     align-items: center;
     justify-content: center;
 }
-
-/* ---- Style do container central ---- */
+/* ---- Style do container ---- */
 .row {
     text-align: center;
     height: 400px;
@@ -23,14 +22,7 @@
     background-color: rgb(17, 53, 26);
     border-radius: 20px;
 }
-@media (max-width: 768px) {
-    .row {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
-/* ------ Style do box de informações ------ */
+/* ---- Style do box de informações e botão cadastro ---- */
 .info-box {
     color: white;
     position: relative;
@@ -41,42 +33,87 @@
     .info-box {
         background-color: black;
         width: 50%;
-        top: 120%;
-        left: 27%;
+        top: 130%;
+        left: 180px;
         border-radius: 20px;
-        h1 {
-            margin-top: 50px;
+        h2 {
+            margin-top: 100px;
         }
     }
 }
-.form-input {
-    margin-bottom: 20px;
+@media (max-width: 576px) {
+    .info-box {
+        background-color: black;
+        width: 50%;
+        top: 130%;
+        left: 100px;
+        border-radius: 20px;
+        h2 {
+            margin-top: 100px;
+        }
+    }
 }
-
-/* ---- Style do formulário de cadastro ---- */
-.col-12.col-md-6 {
+@media (max-width: 400px) {
+    .info-box {
+        background-color: black;
+        width: 50%;
+        top: 130%;
+        left: 50px;
+        border-radius: 20px;
+        h2 {
+            margin-top: 100px;
+        }
+    }
+}
+/* ---- Style do formulário de login ---- */
+.login-form {
     background-color: #f8f9fa;
-    color: black;
-    height: 500px;
-    position: absolute;
+    height: 580px;
     top: 50%;
+    position: absolute;
     transform: translateY(-50%);
     width: 20%;
     right: calc(60% - 50px);
-    z-index: 1000;
+    z-index: 0;
     box-shadow: 0 0 20px 7px #000000;
     border-radius: 20px;
-    padding: 30px;
 }
 @media (max-width: 768px) {
-    .col-12.col-md-6 {
-        top: 50%;
+    .login-form {
+        background-color: #f8f9fa;
         width: 50%;
         right: 25%;
     }
 }
-
-/* ------ Style mensagens de erro ------ */
+@media (max-width: 576px) {
+    .login-form {
+        background-color: #f8f9fa;
+        width: 80%;
+        right: 10%;
+    }
+}
+@media (max-width: 400px) {
+    .login-form {
+        background-color: #f8f9fa;
+        width: 90%;
+        right: 5%;
+    }
+}
+@media (max-width: 425px) {
+    .login-form {
+        background-color: #f8f9fa;
+        width: 90%;
+        right: 50%;
+        top: 50%;
+        left: 50px;
+        border-radius: 20px;
+    }
+}
+/* ---- Style de espaçamento input do formulário de login ---- */
+.form-input {
+    margin-bottom: 20px;
+}
+/* ---- Styles mensagens de erro ---- */
 .messages{
     list-style: none;
 }
@@ -89,7 +126,7 @@
     width: 90%;
 }
 
-/* ------ Style do navbar ------ */
+/* ---- Styles Navbar ---- */
 .navbar-custom {
     background: linear-gradient(45deg, #000000, #031a0a, #11351a);
 }
@@ -100,42 +137,10 @@
     color: white;
 }
 
-/* ------Style ícones de redes sociais ------ */
+/* ---- Styles ícones das redes sociais ---- */
 .social-media {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: auto;
-}
-.social-icons a {
-    color: #ffffff;
-    font-size: 16px;
-    display: inline-block;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 8px;
-    border-radius: 100%;
-    transition: all 0.3s ease;
-}
-.social-icons a:hover {
-    opacity: 0.8;
-}
-.social-icons a.facebook {
-    background-color: #3b5998;
-}
-.social-icons a.twitter {
-    background-color: #55acee;
-}
-.social-icons a.instagram {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    background-size: 300% 300%;
-    animation: gradient 3s linear infinite;
-}
-@media (max-width: 768px) {
-    .social-icons {
-        left: 50%;
-        transform: translateX(-5%);
-    }
 }
