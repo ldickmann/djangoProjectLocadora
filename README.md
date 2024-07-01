@@ -14,6 +14,6 @@ O sistema de autenticação utiliza o "Auth" implementando no Django, possibilit
 * **Dispõe da index.html a page principal de acesso dos usuários e clientes, onde consta fotos com parte da frota da Locadora.**
 * **Acesso a page COLABORADORES que pede o login do funcionário, efetuando o login dá acesso a lista com a frota da Locadora.**
 
-### Projeto 90% concluído: porque? Pois com o desenvolvimento dele notei que vai abrindo um leque de ideis do que pode vir a fazer parte do projeto.
+### Projeto 80% concluído: Pois conforme vou desenvolvendoas ideias vão aparecendo, então resalto que o projeto está em constante desenvolvimento e melhoria.
 
 ### Autor Lucas E. Dickmann - Full Stack Developer
