@@ -14,7 +14,6 @@
     align-items: center;
     justify-content: center;
 }
-
 /* ---- Style do container ---- */
 .row {
     text-align: center;
@@ -26,7 +25,6 @@
 .verdeR {
     color: white;
 }
-
 /* ---- Style do box de informações ---- */
 .info-box {
     color: white;
@@ -46,7 +44,6 @@
         }
     }
 }
-
 /* ---- Style do formulário de cadastro ---- */
 .col-md-12.cadastro {
     background-color: #f8f9fa;
@@ -75,7 +72,6 @@
         right: 5%;
     }
 }
-
 /* ---- Style do navbar ---- */
 .navbar-custom {
     background: linear-gradient(45deg, #000000, #031a0a, #11351a);
@@ -86,17 +82,14 @@
 .nav-link {
     color: white;
 }
-
 /* ---- Style do botão de cadastro ---- */
 .btn.btn-success {
     margin-top: 80px;
 }
-
 /* ---- Styles formulário de cadastro ---- */
 .form-input {
     margin-bottom: 20px;
 }
-
 /* ---- Style ícones dAS redes sociais ---- */
 .social-media {
     display: flex;

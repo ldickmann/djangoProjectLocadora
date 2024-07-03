@@ -77,6 +77,7 @@
     z-index: 0;
     box-shadow: 0 0 20px 7px #000000;
     border-radius: 20px;
+    padding: 30px;
 }
 @media (max-width: 768px) {
     .login-form {
@@ -125,7 +126,6 @@
     border-radius: 5px;
     width: 90%;
 }
-
 /* ---- Styles Navbar ---- */
 .navbar-custom {
     background: linear-gradient(45deg, #000000, #031a0a, #11351a);
@@ -136,7 +136,6 @@
 .nav-link {
     color: white;
 }
-
 /* ---- Styles ícones das redes sociais ---- */
 .social-media {
     display: flex;

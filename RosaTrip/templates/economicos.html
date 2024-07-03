@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FROTA - ROSA TRIP LOCADORA</title>
+    <title>ECONOMICOS - ROSA TRIP LOCADORA</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
+    <link rel="stylesheet" fontawesome="all" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'RosaTrip/assets/image/favicon.png' %}">
 </head>
 
 <body>
@@ -26,9 +28,9 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">FROTA</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">ECONÔMICOS</a>
-                            <a class="dropdown-item" href="#">SUVc'S</a>
-                            <a class="dropdown-item" href="#">UTILITÁRIOS</a>
+                            <a class="dropdown-item" href="/economicos/">ECONÔMICOS</a>
+                            <a class="dropdown-item" href="/suvs/">SUV's</a>
+                            <a class="dropdown-item" href="/utilitarios/">UTILITÁRIOS</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -37,14 +39,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTATO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/accounts/login/">COLABORADOR</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
+
+<script src="{% static 'RosaTrip/assets/js/bootstrap.js' %}"></script>
+<script src="{% static 'RosaTrip/assets/js/jsParaApp.js' %}"></script>
 
 </body>
 </html>
