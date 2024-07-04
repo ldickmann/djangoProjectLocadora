@@ -14,8 +14,7 @@ tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 
-
-// Abre e fecha o menu mobile
+// Abre e fecha o menu navbar no mobile
 document.addEventListener('click', () => {
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('#navbarNav');
@@ -32,4 +31,3 @@ document.addEventListener('click', () => {
     }, 10);
   });
 });
-
