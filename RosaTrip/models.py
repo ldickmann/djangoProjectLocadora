@@ -1,17 +1,26 @@
 from django.db import models
-from django.contrib.auth.models import User
+
+
+class Marca(models.Model):
+    id = models.AutoField(primary_key=True)
+    nome = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.nome
 
 
 # Classe para cadastrar veículos.
 class Veiculo(models.Model):
-    marca = models.CharField(max_length=100)
+    id = models.AutoField(primary_key=True)
     modelo = models.CharField(max_length=100)
-    ano = models.IntegerField()
+    marca = models.ForeignKey(Marca, on_delete=models.PROTECT, related_name='marca_veiculo')
+    ano_fabricacao = models.IntegerField(blank=True, null=True)
+    ano_modelo = models.IntegerField(blank=True, null=True)
     cor = models.CharField(max_length=50)
     placa = models.CharField(max_length=7, unique=True)
     preco = models.DecimalField(max_digits=10, decimal_places=2)
     disponivel = models.BooleanField(default=True)
-    foto = models.ImageField(upload_to='fotos/', null=True, blank=True)
+    foto = models.ImageField(upload_to='RosaTrip/', null=True, blank=True)
 
     def __str__(self):
-        return f"{self.marca} {self.modelo} {self.ano} {self.cor} {self.preco} {self.disponivel}"
+        return self.modelo

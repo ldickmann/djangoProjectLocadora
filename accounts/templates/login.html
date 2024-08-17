@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% load static %}
+    <style>
+        #fucky {
+            background-image: url("{% static 'RosaTrip/assets/image/fucky.jpg' %}");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -1% 0 -1% 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5%;
+            border-radius: 1rem;
+        }
+        form input[type="text"], form input[type="password"], form input[type="submit"] {
+            margin: 5% 0;
+            border-radius: 1rem;
+            padding: 5%;
+            width: 100%;
+        }
+        form input[type="submit"] {
+            border-radius: 1rem;
+            padding: 4% 50%;
+            background: black;
+            color: white;
+            width: auto;
+            align-self: center;
+        }
+    </style>
+    <div class="container-fluid" id="fucky">
+        <form method="post">
+            {% csrf_token %}
+            <table>
+                {{ login_form.as_table }}
+            </table>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+{% endblock %}
