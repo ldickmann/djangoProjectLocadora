@@ -79,6 +79,10 @@
         button[type="submit"]:hover {
             background-color: #008812;
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
     </style>
 
     <form method="GET" action="{% url 'frota' %}">
@@ -89,15 +93,17 @@
     <div class="car-grid">
         {% if veiculos %}
             {% for veiculo in veiculos %}
-                <div class="car-card">
-                    {% if veiculo.foto %}
-                        <img src="{{ veiculo.foto.url }}" alt="{{ veiculo.modelo }} - {{ veiculo.marca }}">
-                    {% else %}
-                        <p class="no-photo">Imagem não disponível</p>
-                    {% endif %}
-                    <h2>{{ veiculo.modelo }} {{ veiculo.marca }}</h2>
-                    <p>{{ veiculo.ano_fabricacao }} - R$ {{ veiculo.preco }} diária</p>
-                </div>
+                <a href="{% url 'detalhe' veiculo.pk %}">
+                    <div class="car-card">
+                        {% if veiculo.foto %}
+                            <img src="{{ veiculo.foto.url }}" alt="{{ veiculo.modelo }} - {{ veiculo.marca }}">
+                        {% else %}
+                            <p class="no-photo">Imagem não disponível</p>
+                        {% endif %}
+                        <h2>{{ veiculo.modelo }} {{ veiculo.marca }}</h2>
+                        <p>{{ veiculo.ano_fabricacao }} - R$ {{ veiculo.preco }} diária</p>
+                    </div>
+                </a>
             {% endfor %}
         {% else %}
             <p class="no-results">Nenhum carro encontrado.</p>
