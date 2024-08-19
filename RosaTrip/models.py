@@ -9,7 +9,7 @@ class Marca(models.Model):
         return self.nome
 
 
-# Classe para cadastrar veículos.
+# Classe para cadastrar veículos, cria o modelo de tabela no banco de dados.
 class Veiculo(models.Model):
     id = models.AutoField(primary_key=True)
     modelo = models.CharField(max_length=100)

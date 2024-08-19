@@ -61,16 +61,16 @@
         }
     </style>
 
-<form method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    <h1>Editar Veículo</h1>
-    <table>
-        {{ form.as_table }}
-    </table>
-    <div class="buttons-container">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h1>Editar Veículo</h1>
+        <table>
+            {{ form.as_table }}
+        </table>
+        <div class="buttons-container">
             <input type="submit" value="Salvar Alterações" class="btn btn-success">
             <a href="{% url 'del-veiculo' pk=object.pk %}" class="btn btn-danger">Deletar Veículo</a>
             <a href="{% url 'frota' %}" class="btn btn-success">Cancelar</a>
-    </div>
-</form>
+        </div>
+    </form>
 {% endblock %}

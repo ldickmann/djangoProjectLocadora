@@ -7,9 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 
-# Criação das views, através de funções, responsáveis por renderizar as páginas html.
-
-
+# Criação das views, através de funções e classes, responsáveis por renderizar as páginas html.
 def home(request):
     return render(request, 'index.html')
 

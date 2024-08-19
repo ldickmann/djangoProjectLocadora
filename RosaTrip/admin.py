@@ -1,9 +1,8 @@
 from django.contrib import admin
 from RosaTrip.models import Veiculo, Marca
 
-# Registra os models no painel de administração.
 
-
+# Registra os models no painel de administração Django.
 class VeiculoAdmin(admin.ModelAdmin):
     list_display = ('modelo', 'marca', 'ano_fabricacao', 'ano_modelo', 'cor', 'placa', 'preco', 'disponivel', 'foto')
     search_fields = ('modelo', 'marca', )
