@@ -6,6 +6,7 @@
     <title>{% block title %}ROSA TRIP LOCADORA{% endblock %}</title>
     {% load static %}
     <!-- Bootstrap 5 CSS (local) -->
+    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-icons.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-icons.min.css' %}">
@@ -20,23 +21,43 @@
             color: #333;
             margin: 0;
             padding: 0;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
+        @media (max-width: 768px) {
+            body {
+                font-size: 0.8rem;
+            }
+            main {
+                margin-top: 3rem;
+            }
+        }
+        @media (max-width: 576px) {
+            body {
+                font-size: 1rem;
+            }
+            main {
+                margin: 15% 5% 0 5% !important;
+            }
+        }
+        @media (max-width: 400px) {
+            body {
+                font-size: 1rem !important;
+            }
+            main {
+                margin: 20% 5% 0 5% !important;
+            }
         }
         nav {
-            width: 100%;
             background-color: #11351a;
             color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
         }
         main {
-            flex-grow: 1;
-            padding: 3% 0 1% 0;
+            margin-top: 5rem;
         }
         footer {
             background-color: #11351a;
@@ -58,57 +79,55 @@
     </style>
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top ">
-            <div class="container-sm">
-                <a class="navbar-brand text-white" href="{% url 'index' %}">ROSA TRIP LOCADORA</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="{% url 'index' %}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="{% url 'frota' %}">Frota</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Aluguel Mensal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="{% url 'contato' %}">Contato</a>
-                        </li>
-                        {% if not user.is_authenticated %}
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="{% url 'login' %}">Login</a>
-                            </li>
-                        {% endif %}
-                        {% if user.is_authenticated %}
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="{% url 'add-veiculo' %}">Cadastrar veículo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="{% url 'logout' %}">Logout</a>
-                            </li>
-                        {% endif %}
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        {% block content %}
-            
-        {% endblock %}
-    </main>
-</div>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'index' %}">ROSA TRIP LOCADORA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'frota' %}">Frota</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Aluguel Mensal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'contato' %}">Contato</a>
+                </li>
+                {% if not user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'login' %}">Login</a>
+                    </li>
+                {% endif %}
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'add-veiculo' %}">Cadastrar veículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
 <div class="container-fluid">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-6 py-5">
         <div class="col mb-3"></div>
-        <div class="col mb-3 ms-5">
+        <div class="col mb-3 ms-1">
             <h4><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
                    href="{% url 'index' %}">Rosa Trip Locadora de Veículos</a>
             </h4>
