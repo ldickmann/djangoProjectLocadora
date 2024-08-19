@@ -16,7 +16,7 @@ O sistema de autenticação utiliza o "Auth" implementando no Django, possibilit
 * Dispõe da index.html a homepage de acesso dos usuários e clientes.
 * Page veiculos.html está a frota da locadora, acessada por usuários e clientes.
 * Page de login, logout e registro para usuários com permissão para fazer alterações na frota.
-* Acesso a edição de veículos, inclusão e exclusão dos mesmos, apenas logado no sistema.
+* Acesso à edição de veículos, inclusão e exclusão dos mesmos, apenas logado no sistema.
 ---
 * Pagina de contato em desenvolvimento, bem como ajustes de css e responsividade.
 ---
