@@ -11,9 +11,15 @@ As requisições de novos usuários são enviadas a quem tem uma conta com permi
 O sistema de autenticação utiliza o "Auth" implementando no Django, possibilitando o controle do acesso de usuários ao sistema interno.
 
 * **Front end em HTML5, CSS3, JavaScript, com Bootstrap v5.3 e Django.**
-* **Dispõe da index.html a page principal de acesso dos usuários e clientes, onde consta fotos com parte da frota da Locadora.**
-* **Acesso a page COLABORADORES que pede o login do funcionário, efetuando o login dá acesso à lista com a frota da Locadora.**
 
-### Projeto 80% concluído: Pois conforme vou desenvolvendo ideias vão aparecendo, então ressalto que o projeto está em constante desenvolvimento e melhoria.
+---
+* Dispõe da index.html a homepage de acesso dos usuários e clientes.
+* Page veiculos.html está a frota da locadora, acessada por usuários e clientes.
+* Page de login, logout e registro para usuários com permissão para fazer alterações na frota.
+* Acesso a edição de veículos, inclusão e exclusão dos mesmos, apenas logado no sistema.
+---
+* Pagina de contato em desenvolvimento, bem como ajustes de css e responsividade.
+---
+### Projeto em constante atualização. Em desenvolvimento...
 
-### Autor Lucas E. Dickmann - Full Stack Developer
+## Autor Lucas E. Dickmann - Full Stack Developer
