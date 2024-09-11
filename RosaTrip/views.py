@@ -4,18 +4,9 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
 
 
 # Criação das views, através de funções e classes, responsáveis por renderizar as páginas html.
-def home(request):
-    return render(request, 'index.html')
-
-
-def contato(request):
-    return render(request, 'contato.html')
-
-
 class VeiculosListView(ListView):
     model = Veiculo
     template_name = 'veiculos.html'

@@ -1,6 +1,11 @@
-from django.apps import AppConfig
+from django.urls import path
+from . import views
 
 
-class RosatripConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'RosaTrip'
+urlpatterns = [
+    path('veiculos/', views.VeiculosListView.as_view(), name='frota'),
+    path('add-veiculo/', views.VeiculoCreateView.as_view(), name='add-veiculo'),
+    path('veiculo/<int:pk>/', views.VeiculoDetailView.as_view(), name='detalhe'),
+    path('veiculo/<int:pk>/editar/', views.VeiculoUpdateView.as_view(), name='edit-veiculo'),
+    path('veiculo/<int:pk>/deletar/', views.VeiculoDeleteView.as_view(), name='del-veiculo'),
+]
