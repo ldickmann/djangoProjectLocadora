@@ -29,7 +29,7 @@ def login_view(request):
         )
         if user is not None:
             login(request, user)
-            return redirect('index')
+            return redirect('home')
         else:
             login_form = AuthenticationForm()
     else:
@@ -43,4 +43,4 @@ def login_view(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('index')
+    return redirect('home')

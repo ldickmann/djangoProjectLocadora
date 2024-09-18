@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}ROSA TRIP LOCADORA{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap.min.css' %}">
@@ -85,9 +85,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{% url 'frota' %}">Frota</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Aluguel Mensal</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{% url 'contato' %}">Contato</a>

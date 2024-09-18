@@ -1,6 +1,7 @@
 from django.db import models
 
 
+# Classe para cadastrar marcas dos veículos, cria o modelo de tabela no banco de dados.
 class Marca(models.Model):
     id = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=100)

@@ -1,34 +1,30 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
     {% load static %}
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-icons.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/bootstrap-icons.min.css' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/fonts/bootstrap-icons.woff' %}">
-    <link rel="stylesheet" href="{% static 'RosaTrip/assets/css/fonts/bootstrap-icons.woff2' %}">
-<style>
-    .custom-header {
-        background-image: url("{% static 'RosaTrip/assets/image/homepage-bmw.jpg' %}");
-        background-size: cover;
-        background-position: center;
-        color: #000000;
-        background-repeat: repeat-x;
-        background-attachment: fixed;
-        height: 100vh;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: -3rem;
-    }
-    .card-img-top {
-        width: 100%;
-        height: auto;
-        max-height: 25rem;
-        object-fit: cover;
-        max-width: 100%;
-    }
-</style>
+    <style>
+        .custom-header {
+            background-image: url("{% static 'RosaTrip/assets/image/homepage-bmw.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: -3rem;
+        }
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            max-height: 25rem;
+            object-fit: cover;
+            max-width: 100%;
+        }
+    </style>
     <header class="custom-header">
         <div class="container-sm">
             <div class="row">
@@ -56,9 +52,9 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card">
-                    <img src="{% static 'RosaTrip/assets/image/mercedez.jpg' %}" class="card-img-top" alt="Mercedez">
+                    <img src="{% static 'RosaTrip/assets/image/mercedez.jpg' %}" class="card-img-top" alt="Mercedes">
                     <div class="card-body">
-                        <h5 class="card-title">Mercedez Benz</h5>
+                        <h5 class="card-title">Mercedes Benz</h5>
                         <p class="card-text">Conforto e segurança para você e sua família.</p>
                     </div>
                 </div>
